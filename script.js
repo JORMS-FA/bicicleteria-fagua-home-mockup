@@ -16,14 +16,15 @@ function renderProducts(list){
   grid.querySelectorAll('.product-card__fav').forEach(button=>button.addEventListener('click',()=>{const liked=button.classList.toggle('is-liked');button.setAttribute('aria-pressed',liked);button.setAttribute('aria-label',liked?'Quitar de favoritos':'Añadir a favoritos')}));
 }
 renderProducts(products.slice(0,4));
-const menuToggle=document.querySelector('.menu-toggle'),nav=document.querySelector('#site-nav'),navScrim=document.querySelector('.nav-scrim');
+const menuToggle=document.querySelector('.menu-toggle'),nav=document.querySelector('#site-nav'),navScrim=document.querySelector('.nav-scrim'),navClose=document.querySelector('.nav-close');
 function setMenu(open){
   nav.classList.toggle('is-open',open);nav.hidden=false;navScrim.hidden=!open;document.body.classList.toggle('menu-open',open);
   menuToggle.setAttribute('aria-expanded',String(open));menuToggle.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú');
-  if(open) nav.querySelector('.site-nav__link')?.focus(); else menuToggle.focus();
+  if(open) navClose?.focus(); else menuToggle.focus();
 }
 menuToggle.addEventListener('click',()=>setMenu(!nav.classList.contains('is-open')));
 navScrim.addEventListener('click',()=>setMenu(false));
+navClose?.addEventListener('click',()=>setMenu(false));
 nav.querySelectorAll('.site-nav__link').forEach(link=>link.addEventListener('click',()=>setMenu(false)));
 document.addEventListener('keydown',event=>{if(event.key==='Escape'&&nav.classList.contains('is-open'))setMenu(false)});
 const searchToggle=document.querySelector('.search-toggle'),searchPanel=document.querySelector('#search-panel');
