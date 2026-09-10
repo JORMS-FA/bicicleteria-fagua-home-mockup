@@ -66,3 +66,6 @@ body{font-family:'Outfit',Arial,sans-serif}
 /* Bandera colombiana consistente en navegadores que no renderizan 🇨🇴 como emoji */
 .announcement__flag{display:inline-block!important;flex:none!important;width:14px;height:9px;margin:0 4px;vertical-align:middle;border-radius:1px;background:linear-gradient(to bottom,#fcd116 0 50%,#003893 50% 75%,#ce1126 75% 100%)}
 .nav-scrim[hidden],.site-nav[hidden]{display:none!important}
+
+/* En escritorio la navegación siempre debe estar visible; la regla móvil cerrada no debe prevalecer. */
+@media (min-width:821px){.site-nav:not(.is-open),.site-nav.is-open{display:flex!important}}
