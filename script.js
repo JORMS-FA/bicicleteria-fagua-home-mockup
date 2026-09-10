@@ -17,9 +17,7 @@ function renderProducts(list){
 }
 renderProducts(products.slice(0,4));
 const menuToggle=document.querySelector('.menu-toggle'),nav=document.querySelector('#site-nav');
-menuToggle.addEventListener('click',()=>{const open=nav.classList.toggle('is-open');menuToggle.setAttribute('aria-expanded',open);menuToggle.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú')});
+menuToggle.addEventListener('click',()=>{const open=nav.classList.toggle('is-open');nav.hidden=!open;menuToggle.setAttribute('aria-expanded',open);menuToggle.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú')});
 const searchToggle=document.querySelector('.search-toggle'),searchPanel=document.querySelector('#search-panel');
 searchToggle.addEventListener('click',()=>{const open=searchPanel.hidden;searchPanel.hidden=!open;searchToggle.setAttribute('aria-expanded',open);if(open)document.querySelector('#product-search').focus()});
 document.querySelector('.search-form').addEventListener('submit',event=>{event.preventDefault();const query=document.querySelector('#product-search').value.trim().toLowerCase();renderProducts(query?products.filter(product=>`${product.name} ${product.category}`.toLowerCase().includes(query)):products.slice(0,4));document.querySelector('#productos').scrollIntoView({behavior:'smooth',block:'start'})});
-const pauseButton=document.querySelector('.announcement__pause'),announcement=document.querySelector('.announcement');let carouselPaused=false;
-pauseButton.addEventListener('click',()=>{carouselPaused=!carouselPaused;announcement.classList.toggle('is-paused',carouselPaused);pauseButton.setAttribute('aria-pressed',carouselPaused);pauseButton.setAttribute('aria-label',carouselPaused?'Reanudar mensajes':'Pausar mensajes');pauseButton.querySelector('span').textContent=carouselPaused?'▶':'Ⅱ'});
