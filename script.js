@@ -18,7 +18,7 @@ function renderProducts(list){
 renderProducts(products.slice(0,4));
 const menuToggle=document.querySelector('.menu-toggle'),nav=document.querySelector('#site-nav'),navScrim=document.querySelector('.nav-scrim');
 function setMenu(open){
-  nav.classList.toggle('is-open',open);nav.hidden=!open;navScrim.hidden=!open;document.body.classList.toggle('menu-open',open);
+  nav.classList.toggle('is-open',open);nav.hidden=false;navScrim.hidden=!open;document.body.classList.toggle('menu-open',open);
   menuToggle.setAttribute('aria-expanded',String(open));menuToggle.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú');
   if(open) nav.querySelector('.site-nav__link')?.focus(); else menuToggle.focus();
 }
