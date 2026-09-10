@@ -23,5 +23,6 @@ body{background:#fff}.announcement__inner{overflow:hidden;justify-content:center
 
 /* Reemplaza Space Grotesk y garantiza estado cerrado inicial del menú */
 body{font-family:'Outfit',Arial,sans-serif}
+:root{color-scheme:light}html{color-scheme:light}
 @media (min-width:821px){.site-nav{display:flex!important}}
-@media (max-width:820px){.site-nav:not(.is-open){display:none!important}.site-nav.is-open{display:flex!important}}
+@media (max-width:820px){.site-nav:not(.is-open){display:none!important}.site-nav.is-open{display:flex!important;height:auto!important}.site-nav.is-open .site-nav__link{display:block!important;visibility:visible!important}}
