@@ -33,3 +33,16 @@
 7. Probar compra completa, formularios, responsive, accesibilidad y rendimiento.
 
 La maqueta publicada es una referencia visual; el resultado final debe reconstruirse dentro de WordPress para que sea editable y mantenible como una instalación nativa.
+
+## Auditoría del WordPress actual
+
+- [x] WordPress público responde y expone WooCommerce Store API, Elementor y Novamira.
+- [x] Instalación observada: Blocksy + Blocksy Companion, Elementor y WooCommerce activos.
+- [x] Se conservan las páginas del sistema de WooCommerce: Tienda, Carrito, Finalizar compra y Mi cuenta.
+- [x] Hay productos y categorías reales disponibles para la página Tienda.
+- [ ] Resolver duplicados: “Nosotros y contacto” frente a “Nosotros” + “Contacto”.
+- [ ] Resolver duplicados entre “Políticas y condiciones” y las páginas legales individuales.
+- [ ] Corregir el menú después de decidir qué páginas se conservan.
+- [ ] Probar checkout con un producto real y no únicamente con carrito vacío.
+
+No se deben borrar páginas ni desinstalar WooCommerce durante la fase de diagnóstico. Primero se decide la página canónica y se comprueban sus referencias en WooCommerce y el menú.
