@@ -73,6 +73,7 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] Instalación observada: Blocksy + Blocksy Companion, Elementor y WooCommerce activos.
 - [x] Se conservan las páginas del sistema de WooCommerce: Tienda, Carrito, Finalizar compra y Mi cuenta.
 - [x] Hay productos y categorías reales disponibles para la página Tienda.
+- [x] WooCommerce quedó apuntando a la página válida “Términos y Condiciones” (ID 1047); el valor anterior 664 se guardó como respaldo reversible.
 - [ ] Resolver duplicados: “Nosotros y contacto” frente a “Nosotros” + “Contacto”.
 - [ ] Resolver duplicados entre “Políticas y condiciones” y las páginas legales individuales.
 - [ ] Corregir el menú después de decidir qué páginas se conservan.

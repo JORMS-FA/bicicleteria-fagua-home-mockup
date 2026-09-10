@@ -47,6 +47,6 @@ Carrito y Mi Cuenta deben quedar como iconos o enlaces secundarios. Las páginas
 - Después de Inicio: comprobar edición con Elementor, responsive, foco, contraste, alt y ausencia de overflow.
 - Antes de publicar: producto → carrito → checkout → confirmación, formulario de contacto y enlaces legales.
 
-## Hallazgo pendiente
+## Hallazgo corregido y pendiente de validación
 
-La configuración actual de WooCommerce apunta `woocommerce_terms_page_id` a la página 664, pero ese registro no existe en las páginas consultadas. Antes de publicar el checkout se debe asignar de forma reversible una página de términos válida y revisar su texto; no se debe inventar el correo, teléfono o dirección legal faltante.
+La configuración de WooCommerce apuntaba `woocommerce_terms_page_id` a la página 664, pero ese registro no existía. Se corrigió de forma reversible para usar la página válida 1047 (`/terminos-condiciones/`) y se guardó el valor anterior en `fagua_backup_woocommerce_terms_page_id`. Falta probar el checkout con un producto real y revisar los datos legales que todavía no estén confirmados; no se debe inventar correo, teléfono o dirección.
