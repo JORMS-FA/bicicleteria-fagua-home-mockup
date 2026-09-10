@@ -7,6 +7,7 @@ Esta carpeta contiene una maqueta visual independiente para aprobar la direcció
 - [Portada pública](https://jorms-fa.github.io/bicicleteria-fagua-home-mockup/)
 - [Maqueta de Tienda](https://jorms-fa.github.io/bicicleteria-fagua-home-mockup/tienda.html)
 - [Checklist de aceptación](CHECKLIST.md)
+- [Plan de implementación nativa en WordPress](WORDPRESS-NATIVE-IMPLEMENTATION.md)
 
 ## Archivos
 
