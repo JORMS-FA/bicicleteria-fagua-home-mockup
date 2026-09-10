@@ -1,6 +1,6 @@
 # Checklist de aceptación — Bicicletería Fagua
 
-## Portada móvil — comprobado
+## Portada móvil — comprobado en la maqueta pública
 
 - [x] Fondo claro con negro, blanco, azul y dorado.
 - [x] Logo centrado en la cabecera.
@@ -13,7 +13,17 @@
 - [x] Sin desplazamiento horizontal en móvil.
 - [x] Imágenes con texto alternativo y botones táctiles amplios.
 
-## Portada — pendiente de aprobación
+### Evidencia de la última revisión
+
+- [x] Orden comercial: hero → beneficios → productos destacados → categorías → asesoría → CTA final.
+- [x] Una sola sección de productos destacados; no hay duplicación accidental.
+- [x] Cuatro tarjetas destacadas con enlace de producto, precio, disponibilidad y CTA.
+- [x] Menú lateral probado como panel fuera de pantalla: entra de izquierda a derecha, tiene cierre visible, Escape, fondo atenuado, bloqueo de scroll y retorno del foco al botón de menú.
+- [x] Barra de anuncios sin botón de pausa; la bandera se ve en la interfaz y el texto accesible es “¡Envíos a toda Colombia!”.
+- [x] En una vista móvil de 319 px de ancho no se detectó overflow horizontal.
+- [x] Jerarquía de encabezados comprobada: un H1 para la portada y H2 para las secciones.
+
+## Portada — pendiente de aprobación del propietario
 
 - [ ] Confirmar tipografía definitiva.
 - [ ] Confirmar textos, promociones y precios reales.
@@ -22,15 +32,38 @@
 - [ ] Validar búsqueda, favoritos, carrito y enlaces reales.
 - [ ] Medir rendimiento y revisar errores de consola.
 
-## Flujo de construcción nativa
+### Criterios de “lista para WordPress”
 
-1. Aprobar la composición de la portada.
-2. Configurar WooCommerce, productos, categorías y páginas del sistema.
-3. Crear y validar la página Tienda con datos dinámicos.
-4. Reconstruir la portada en WordPress con widgets nativos de Elementor y componentes de WooCommerce/Blocksy.
-5. Crear Nosotros, Contacto, Taller y páginas legales.
-6. Configurar menú, cabecera, pie y enlaces.
-7. Probar compra completa, formularios, responsive, accesibilidad y rendimiento.
+- [ ] Todos los CTAs llevan a destinos reales de WooCommerce o a una página de contenido real.
+- [ ] No quedan productos agotados dentro de “Destacados” salvo que se quiera usarlos como preventa.
+- [ ] La tipografía final se carga de forma estable y conserva legibilidad móvil (texto normal de al menos 16 px).
+- [ ] El logo conserva proporción, texto alternativo y centrado en 320–390 px.
+- [ ] El menú no repite Tienda, Nosotros, Contacto ni páginas legales.
+- [ ] Cada botón y control de icono tiene nombre accesible, foco visible y área táctil suficiente.
+
+## Flujo de construcción nativa (WordPress + WooCommerce + Elementor gratuito)
+
+1. **Congelar la arquitectura.** Aprobar la portada y definir las páginas canónicas antes de borrar o mover nada.
+2. **Dejar WooCommerce activo.** No se desinstala para crear la portada: Tienda, Carrito, Finalizar compra y Mi cuenta son páginas del sistema y deben seguir configuradas en WooCommerce.
+3. **Preparar el catálogo.** Revisar productos, categorías, precios, inventario, imágenes y productos destacados; excluir agotados de los bloques de venta.
+4. **Construir Tienda primero como archivo dinámico.** La página debe mostrar el catálogo real con filtros, búsqueda, orden y enlaces a fichas de producto; no debe ser una cuadrícula HTML fija.
+5. **Reconstruir Inicio directamente en WordPress.** Usar widgets nativos de Elementor (contenedores/columnas, encabezados, imágenes, botones, iconos y separadores) y bloques o componentes nativos de WooCommerce/Blocksy. No pegar una página completa en un widget HTML.
+6. **Usar Blocksy para lo global.** Con Elementor gratuito, el encabezado, el menú, el pie y las plantillas globales de WooCommerce se resuelven con Blocksy/Customizer. Elementor gratuito edita el contenido de la página, pero no sustituye por sí solo el Theme Builder de Elementor Pro.
+7. **Crear contenido y legal.** Consolidar Nosotros, Contacto y Taller; mantener las páginas legales separadas en el pie; no publicar textos con placeholders como `[Tu email]`.
+8. **Configurar el menú canónico.** Inicio, Tienda, Bicicletas, Componentes, Accesorios, Taller y Nosotros/Contacto. Carrito y Mi cuenta quedan como iconos o enlaces secundarios; las páginas legales no van en el menú principal.
+9. **Hacer pruebas por puertas.** Después de cada página se verifica móvil, escritorio, teclado, lector de pantalla, enlaces, formulario, carrito y checkout antes de pasar a la siguiente.
+10. **Publicar solo después del recorrido completo.** Probar producto → carrito → checkout → confirmación, formularios y estados vacíos; luego revisar rendimiento y hacer una copia de seguridad.
+
+### Qué se crea y qué no se recrea
+
+| Pieza | Implementación nativa | No hacer |
+|---|---|---|
+| Inicio | Página WordPress editada con Elementor | Insertar una página HTML completa en un widget |
+| Tienda | Archivo de WooCommerce + estilos de Blocksy | Mantener una cuadrícula estática como catálogo final |
+| Producto | Plantilla/ficha de WooCommerce | Copiar manualmente cada precio y stock |
+| Carrito, pago, cuenta | Páginas de sistema de WooCommerce | Borrarlas para “reiniciar” |
+| Cabecera, menú y pie | Blocksy/Customizer; Elementor solo si la licencia lo permite | Duplicar menús en varias ubicaciones |
+| Nosotros, Contacto, Taller | Páginas de contenido con widgets nativos | Conservar dos páginas con el mismo propósito |
 
 La maqueta publicada es una referencia visual; el resultado final debe reconstruirse dentro de WordPress para que sea editable y mantenible como una instalación nativa.
 
@@ -44,6 +77,16 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [ ] Resolver duplicados entre “Políticas y condiciones” y las páginas legales individuales.
 - [ ] Corregir el menú después de decidir qué páginas se conservan.
 - [ ] Probar checkout con un producto real y no únicamente con carrito vacío.
+
+### Estado de trabajo recomendado
+
+- [x] Maqueta visual de Inicio aprobada como dirección de diseño.
+- [x] Maqueta visual de Tienda disponible para comparar la arquitectura comercial.
+- [ ] Auditoría y copia de seguridad de menú, páginas y ajustes de WooCommerce.
+- [ ] Definir páginas canónicas y migrar contenido real sin sobrescribir datos sin confirmar.
+- [ ] Construir Tienda nativa con el catálogo real.
+- [ ] Construir Inicio nativo con Elementor y Blocksy.
+- [ ] Revisar menú, pie, legales, formularios y recorrido de compra.
 
 No se deben borrar páginas ni desinstalar WooCommerce durante la fase de diagnóstico. Primero se decide la página canónica y se comprueban sus referencias en WooCommerce y el menú.
 
