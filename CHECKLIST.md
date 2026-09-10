@@ -46,3 +46,14 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [ ] Probar checkout con un producto real y no únicamente con carrito vacío.
 
 No se deben borrar páginas ni desinstalar WooCommerce durante la fase de diagnóstico. Primero se decide la página canónica y se comprueban sus referencias en WooCommerce y el menú.
+
+## Maqueta de Tienda — comprobado
+
+- [x] Página pública independiente con hero de catálogo y CTA de asesoría.
+- [x] Seis productos del catálogo de referencia con precio, stock y compra.
+- [x] Filtros por categoría, búsqueda y ordenamiento.
+- [x] Estado vacío con acción para limpiar filtros.
+- [x] Imágenes cargadas sin dependencias remotas rotas.
+- [x] Móvil sin overflow horizontal y controles accesibles.
+
+La maqueta de Tienda no reemplaza el archivo de productos de WooCommerce: sirve para aprobar la composición antes de reconstruir el archivo dinámico en WordPress.
