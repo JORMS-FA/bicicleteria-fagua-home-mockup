@@ -1,0 +1,27 @@
+# Maqueta de Inicio · Bicicletería Fagua
+
+Esta carpeta contiene una maqueta visual independiente para aprobar la dirección de la portada antes de tocar WordPress.
+
+## Archivos
+
+- `index.html`: estructura semántica de la portada.
+- `styles.css`: tokens de marca, responsive y estados de interacción.
+- `script.js`: búsqueda local de demostración, favoritos visuales y render de productos reales.
+
+## Fuente de los productos
+
+Los seis productos mostrados corresponden al catálogo público actual de WooCommerce y sus imágenes se cargan desde el sitio de Fagua. La maqueta no modifica productos, pedidos ni la biblioteca de medios.
+
+## Traducción a Elementor
+
+La portada no debe pegarse como un widget HTML único. La reconstrucción posterior debe usar una sección por cada atributo `data-elementor-section` y estos elementos nativos:
+
+- `hero`: contenedor de layout + Heading + Text Editor + Image + Buttons.
+- `beneficios`: cuatro bloques con Icon + Heading + Text Editor.
+- `categorias`: cuatro enlaces con Heading, Text Editor e Image de fondo del contenedor.
+- `productos-destacados`: Products/Loop Grid de WooCommerce o cuatro columnas con Image, Heading, Price y Button.
+- `servicio`: Image + Heading + Text Editor + Button.
+- `cta-final`: Heading + Button.
+- `footer`: se configura globalmente en Blocksy; las políticas permanecen en el pie.
+
+Los contenedores son solamente wrappers de distribución. No sustituyen ningún widget de contenido de Elementor.
