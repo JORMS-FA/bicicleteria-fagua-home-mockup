@@ -4,8 +4,8 @@ const shopProducts=[
   {id:69,name:'Bicicleta GW Falcon 3×8 Velocidades MTB Rin 29',category:'MTB',price:950000,image:shopAssets+'product-69.jpeg',url:'/producto/bicicleta-gw-falcon-mtb-negro-aluminio-8vel/',stock:true,tag:'FAVORITA'},
   {id:938,name:'Zapatillas Ruta Snake Amarillo GW',category:'Accesorios',price:320000,image:shopAssets+'product-938.png',url:'/producto/zapatillas-ruta-snake-amarillo/',stock:true,tag:'NUEVO'},
   {id:928,name:'Multiherramientas PRO 22 Funciones',category:'Herramientas',price:128600,image:shopAssets+'product-928.png',url:'/producto/multiherramientas-pro-22-funciones/',stock:true,tag:'TALLER'},
-  {id:910,name:'Luz Trasera EBL-035RB 100 lm GW',category:'Accesorios',price:27600,image:'https://ironman.tailcdf25e.ts.net/wp-content/uploads/2026/07/luces__luz-trasera-ebl-035rb-100lm-gw__01_dark_studio_4x3.png',url:'/producto/luz-trasera-ebl-035rb-100lm-gw/',stock:true,tag:''},
-  {id:901,name:'Guantes Cortos Air Line Gris',category:'Accesorios',price:58900,image:'https://ironman.tailcdf25e.ts.net/wp-content/uploads/2026/07/guantes__guantes-cortos-air-line-gris__01_dark_studio_4x3.png',url:'/producto/guantes-cortos-air-line-gris/',stock:true,tag:''}
+  {id:910,name:'Luz Trasera EBL-035RB 100 lm GW',category:'Accesorios',price:27600,image:shopAssets+'placeholder-luz.svg',url:'/producto/luz-trasera-ebl-035rb-100lm-gw/',stock:true,tag:''},
+  {id:901,name:'Guantes Cortos Air Line Gris',category:'Accesorios',price:58900,image:shopAssets+'placeholder-guantes.svg',url:'/producto/guantes-cortos-air-line-gris/',stock:true,tag:''}
 ];
 const formatShopCOP=value=>new Intl.NumberFormat('es-CO',{style:'currency',currency:'COP',maximumFractionDigits:0}).format(value);
 const shopHeart='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.8c0 5-8.8 10-8.8 10s-8.8-5-8.8-10A4.7 4.7 0 0 1 12 6a4.7 4.7 0 0 1 8.8 2.8Z"/></svg>';
