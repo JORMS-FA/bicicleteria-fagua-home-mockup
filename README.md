@@ -18,10 +18,10 @@ La portada no debe pegarse como un widget HTML único. La reconstrucción poster
 
 - `hero`: contenedor de layout + Heading + Text Editor + Image + Buttons.
 - `beneficios`: cuatro bloques con Icon + Heading + Text Editor.
-- `categorias`: cuatro enlaces con Heading, Text Editor e Image de fondo del contenedor.
+- `categorias`: tres enlaces con Heading, Text Editor e Image/forma de fondo del contenedor.
 - `productos-destacados`: Products/Loop Grid de WooCommerce o cuatro columnas con Image, Heading, Price y Button.
-- `servicio`: Image + Heading + Text Editor + Button.
+- `cta-intermedio`: Heading + Text Editor + Button para asesoría de compra.
 - `cta-final`: Heading + Button.
 - `footer`: se configura globalmente en Blocksy; las políticas permanecen en el pie.
 
-Los contenedores son solamente wrappers de distribución. No sustituyen ningún widget de contenido de Elementor.
+La portada prioriza la conversión: productos reales, precios, disponibilidad y botones de compra. La reconstrucción posterior debe usar widgets nativos de Elementor (Heading, Text Editor, Image, Products/Loop Grid y Button). Los wrappers de layout no sustituyen esos widgets.
