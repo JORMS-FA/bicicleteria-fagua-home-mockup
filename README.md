@@ -2,6 +2,12 @@
 
 Esta carpeta contiene una maqueta visual independiente para aprobar la dirección de la portada antes de tocar WordPress.
 
+## Revisar
+
+- [Portada pública](https://jorms-fa.github.io/bicicleteria-fagua-home-mockup/)
+- [Maqueta de Tienda](https://jorms-fa.github.io/bicicleteria-fagua-home-mockup/tienda.html)
+- [Checklist de aceptación](CHECKLIST.md)
+
 ## Archivos
 
 - `index.html`: estructura semántica de la portada.
@@ -10,7 +16,7 @@ Esta carpeta contiene una maqueta visual independiente para aprobar la direcció
 
 ## Fuente de los productos
 
-Los seis productos mostrados corresponden al catálogo público actual de WooCommerce y sus imágenes se cargan desde el sitio de Fagua. La maqueta no modifica productos, pedidos ni la biblioteca de medios.
+Los seis productos mostrados corresponden al catálogo público actual de WooCommerce. Cuatro usan imágenes locales del catálogo; dos usan placeholders locales declarados mientras se incorpora la fotografía oficial. La maqueta no modifica productos, pedidos ni la biblioteca de medios.
 
 ## Traducción a Elementor
 
