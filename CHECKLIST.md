@@ -88,6 +88,14 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [ ] Construir Inicio nativo con Elementor y Blocksy.
 - [ ] Revisar menú, pie, legales, formularios y recorrido de compra.
 
+### Auditoría de menús de WordPress (solo lectura)
+
+- [x] Se encontraron tres menús: `Main Menu`, `Menú Principal` y `Primary`.
+- [x] `Primary` contiene 8 enlaces: Inicio, Tienda, Bicicletas, Componentes, Indumentaria, Accesorios, Servicio Técnico y Contacto.
+- [x] `Main Menu` y `Menú Principal` contienen enlaces parciales que duplican categorías o Inicio.
+- [x] La lectura de ubicaciones del tema devolvió `nav_menu_locations` vacío; antes de editar hay que confirmar qué menú está mostrando Blocksy en su constructor de cabecera.
+- [ ] Crear una copia/referencia del menú activo y reducirlo a una sola navegación principal.
+
 No se deben borrar páginas ni desinstalar WooCommerce durante la fase de diagnóstico. Primero se decide la página canónica y se comprueban sus referencias en WooCommerce y el menú.
 
 ## Maqueta de Tienda — comprobado
