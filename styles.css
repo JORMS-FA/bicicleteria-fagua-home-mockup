@@ -30,3 +30,4 @@ body{font-family:'Outfit',Arial,sans-serif}
 /* Canvas claro explícito: evita que el modo oscuro del navegador invierta la portada */
 #contenido,.hero,.hero__copy,.section,.proof-strip,.final-cta{background-color:#fff!important;color:#0b0f16!important}
 .conversion-band,.category-card--primary{background-color:var(--ink)!important;color:#fff!important}
+.icon-button{width:44px;height:44px}.product-card__fav{width:44px;height:44px}.product-card .button{min-height:44px}
