@@ -49,6 +49,8 @@ Carrito y Mi Cuenta deben quedar como iconos o enlaces secundarios. Las páginas
 
 ## Cambios aplicados y pendientes de validación
 
-Se corrigió de forma reversible `woocommerce_terms_page_id` para usar la página válida 1047 (`/terminos-condiciones/`) y se guardó el valor anterior en `fagua_backup_woocommerce_terms_page_id`. La portada 555 ya usa widgets nativos de Elementor, el menú `Primary` 124 está asignado a Blocksy y la cabecera usa la distribución logo-centro / búsqueda-carrito-derecha. Los destacados muestran cuatro IDs reales con stock disponible.
+Se corrigió de forma reversible `woocommerce_terms_page_id` para usar la página válida 1047 (`/terminos-condiciones/`) y se guardó el valor anterior en `fagua_backup_woocommerce_terms_page_id`. La portada 555 ya usa widgets nativos de Elementor, incluye un hero con imagen real de producto y el menú `Primary` 124 está asignado a Blocksy con distribución logo-centro / búsqueda-carrito-derecha. Los destacados muestran cuatro IDs reales con stock disponible.
+
+El archivo de Tienda mantiene el catálogo dinámico de WooCommerce, ahora con barra lateral nativa de categorías y precio, tarjetas estilizadas desde Blocksy y objetivos táctiles móviles de 44 px. La página duplicada “Nosotros y contacto” y el agregado antiguo “Políticas y condiciones” se conservaron como borradores reversibles; “Nosotros”, “Contacto” y las páginas legales individuales quedan como páginas canónicas.
 
 Falta probar el checkout completo con datos de prueba y revisar los datos legales que todavía no estén confirmados; no se debe inventar correo, teléfono o dirección.
