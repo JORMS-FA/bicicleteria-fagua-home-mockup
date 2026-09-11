@@ -7,6 +7,7 @@ Esta carpeta contiene una maqueta visual independiente para aprobar la direcció
 - [Portada pública](https://jorms-fa.github.io/bicicleteria-fagua-home-mockup/)
 - [Maqueta de Tienda](https://jorms-fa.github.io/bicicleteria-fagua-home-mockup/tienda.html)
 - [Checklist de aceptación](CHECKLIST.md)
+- [Informe QA](QA-REPORT.md)
 - [Plan de implementación nativa en WordPress](WORDPRESS-NATIVE-IMPLEMENTATION.md)
 
 En GitHub Pages, los enlaces de Inicio y Tienda permanecen dentro de esta maqueta para facilitar la revisión desde el teléfono. Las categorías, fichas de producto, carrito y checkout siguen apuntando al WordPress real; esa adaptación solo se activa en el dominio de la maqueta.
