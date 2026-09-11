@@ -40,7 +40,7 @@
 - [x] Los CTAs auditados llevan a destinos reales de WooCommerce o a páginas de contenido real; Favoritos queda pendiente de decisión funcional.
 - [x] Las cuatro tarjetas de “Destacados” corresponden a productos actualmente disponibles (`instock`); no se muestran agotados como preventa.
 - [x] La tipografía Montserrat se carga de forma estable y conserva legibilidad móvil (texto normal de al menos 16 px).
-- [ ] El logo conserva proporción, texto alternativo y centrado en 320–390 px.
+- [x] El logo conserva proporción, texto alternativo y centrado en la vista móvil auditada de 319 px; queda pendiente comprobar un ancho intermedio cercano a 390 px en dispositivo físico.
 - [x] El menú principal no repite Tienda, Nosotros, Contacto ni páginas legales.
 - [x] Los botones y controles auditados tienen nombre accesible, foco visible y área táctil suficiente; queda pendiente la comprobación en teléfono físico.
 
