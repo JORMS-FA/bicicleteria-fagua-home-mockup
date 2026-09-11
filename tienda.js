@@ -1,12 +1,18 @@
 // En GitHub Pages, conserva la navegación de la maqueta sin tocar los enlaces
 // canónicos del sitio real de WordPress.
+const previewLiveBase='https://ironman.tailcdf25e.ts.net';
+function previewHref(href){
+  if(!location.hostname.endsWith('.github.io'))return href;
+  if(href==='/'||href==='./')return './index.html';
+  if(href==='/tienda/')return './tienda.html';
+  if(href.startsWith('/'))return previewLiveBase+href;
+  return href;
+}
 function configurePreviewLinks(){
   if(!location.hostname.endsWith('.github.io'))return;
   document.querySelector('base')?.remove();
   document.querySelectorAll('a[href]').forEach(link=>{
-    const href=link.getAttribute('href');
-    if(href==='/'||href==='./')link.setAttribute('href','./index.html');
-    else if(href==='/tienda/')link.setAttribute('href','./tienda.html');
+    link.setAttribute('href',previewHref(link.getAttribute('href')||''));
   });
 }
 configurePreviewLinks();
@@ -29,7 +35,7 @@ function renderShop(){
   if(shopState.sort==='price-asc')list=[...list].sort((a,b)=>a.price-b.price);
   if(shopState.sort==='price-desc')list=[...list].sort((a,b)=>b.price-a.price);
   if(shopState.sort==='name')list=[...list].sort((a,b)=>a.name.localeCompare(b.name,'es'));
-  shopGrid.innerHTML=list.map(product=>`<article class="product-card"><div class="product-card__image"><a href="${product.url}" aria-label="Ver ${product.name}"><img src="${product.image}" alt="${product.name}" width="600" height="600" loading="lazy"></a>${product.tag?`<span class="product-card__tag">${product.tag}</span>`:''}<button class="product-card__fav" type="button" aria-label="Añadir ${product.name} a favoritos" aria-pressed="false">${shopHeart}</button></div><div class="product-card__body"><span class="product-card__category">${product.category}</span><h3><a href="${product.url}">${product.name}</a></h3><div class="product-card__price"><span class="price">${formatShopCOP(product.price)}</span></div><span class="stock">Disponible para envío</span><a class="button button--primary" href="${product.url}">Comprar <span aria-hidden="true">→</span></a></div></article>`).join('');
+  shopGrid.innerHTML=list.map(product=>{const url=previewHref(product.url);return `<article class="product-card"><div class="product-card__image"><a href="${url}" aria-label="Ver ${product.name}"><img src="${product.image}" alt="${product.name}" width="600" height="600" loading="lazy"></a>${product.tag?`<span class="product-card__tag">${product.tag}</span>`:''}<button class="product-card__fav" type="button" aria-label="Añadir ${product.name} a favoritos" aria-pressed="false">${shopHeart}</button></div><div class="product-card__body"><span class="product-card__category">${product.category}</span><h3><a href="${url}">${product.name}</a></h3><div class="product-card__price"><span class="price">${formatShopCOP(product.price)}</span></div><span class="stock">Disponible para envío</span><a class="button button--primary" href="${url}">Comprar <span aria-hidden="true">→</span></a></div></article>`}).join('');
   shopGrid.hidden=list.length===0;shopEmpty.hidden=list.length>0;resultsCount.textContent=`${list.length} ${list.length===1?'producto disponible':'productos disponibles'}`;
   shopGrid.querySelectorAll('.product-card__fav').forEach(button=>button.addEventListener('click',()=>{const liked=button.classList.toggle('is-liked');button.setAttribute('aria-pressed',String(liked));button.setAttribute('aria-label',liked?'Quitar de favoritos':'Añadir a favoritos')}));
 }

@@ -1,13 +1,19 @@
 const ghAssets='https://jorms-fa.github.io/bicicleteria-fagua-home-mockup/assets/';
 // En GitHub Pages, conserva la navegación de la maqueta sin tocar los enlaces
 // canónicos del sitio real de WordPress.
+const previewLiveBase='https://ironman.tailcdf25e.ts.net';
+function previewHref(href){
+  if(!location.hostname.endsWith('.github.io'))return href;
+  if(href==='/'||href==='./')return './index.html';
+  if(href==='/tienda/')return './tienda.html';
+  if(href.startsWith('/'))return previewLiveBase+href;
+  return href;
+}
 function configurePreviewLinks(){
   if(!location.hostname.endsWith('.github.io'))return;
   document.querySelector('base')?.remove();
   document.querySelectorAll('a[href]').forEach(link=>{
-    const href=link.getAttribute('href');
-    if(href==='/'||href==='./')link.setAttribute('href','./index.html');
-    else if(href==='/tienda/')link.setAttribute('href','./tienda.html');
+    link.setAttribute('href',previewHref(link.getAttribute('href')||''));
   });
 }
 configurePreviewLinks();
@@ -23,7 +29,7 @@ const formatCOP=value=>new Intl.NumberFormat('es-CO',{style:'currency',currency:
 const heartIcon='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 8.8c0 5-8.8 10-8.8 10s-8.8-5-8.8-10A4.7 4.7 0 0 1 12 6a4.7 4.7 0 0 1 8.8 2.8Z"/></svg>';
 function renderProducts(list){
   const grid=document.querySelector('#product-grid'),empty=document.querySelector('#empty-products');
-  grid.innerHTML=list.map(product=>`<article class="product-card"><div class="product-card__image"><a href="${product.url}" aria-label="Ver ${product.name}"><img src="${product.image}" alt="${product.name}" width="600" height="600" loading="lazy"></a>${product.tag?`<span class="product-card__tag">${product.tag}</span>`:''}<button class="product-card__fav" type="button" aria-label="Añadir ${product.name} a favoritos" aria-pressed="false">${heartIcon}</button></div><div class="product-card__body"><span class="product-card__category">${product.category}</span><h3><a href="${product.url}">${product.name}</a></h3><div class="product-card__price"><span class="price">${formatCOP(product.price)}</span></div><span class="stock ${product.stock?'':'stock--off'}">${product.stock?'Disponible para envío':'Consultar disponibilidad'}</span><a class="button button--primary" href="${product.url}">Comprar <span aria-hidden="true">→</span></a></div></article>`).join('');
+  grid.innerHTML=list.map(product=>{const url=previewHref(product.url);return `<article class="product-card"><div class="product-card__image"><a href="${url}" aria-label="Ver ${product.name}"><img src="${product.image}" alt="${product.name}" width="600" height="600" loading="lazy"></a>${product.tag?`<span class="product-card__tag">${product.tag}</span>`:''}<button class="product-card__fav" type="button" aria-label="Añadir ${product.name} a favoritos" aria-pressed="false">${heartIcon}</button></div><div class="product-card__body"><span class="product-card__category">${product.category}</span><h3><a href="${url}">${product.name}</a></h3><div class="product-card__price"><span class="price">${formatCOP(product.price)}</span></div><span class="stock ${product.stock?'':'stock--off'}">${product.stock?'Disponible para envío':'Consultar disponibilidad'}</span><a class="button button--primary" href="${url}">Comprar <span aria-hidden="true">→</span></a></div></article>`}).join('');
   empty.hidden=list.length>0;grid.hidden=list.length===0;
   grid.querySelectorAll('.product-card__fav').forEach(button=>button.addEventListener('click',()=>{const liked=button.classList.toggle('is-liked');button.setAttribute('aria-pressed',liked);button.setAttribute('aria-label',liked?'Quitar de favoritos':'Añadir a favoritos')}));
 }
