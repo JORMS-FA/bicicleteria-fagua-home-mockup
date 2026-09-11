@@ -87,6 +87,8 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] La imagen principal de la ficha GW Lynx tiene ahora un título de biblioteca descriptivo y `alt` específico; se verificó en el árbol accesible del producto.
 - [x] La ficha de producto GW Lynx fue comprobada en viewport móvil: un H1, galería con `alt`, precio, cantidad y “Añadir al carrito” accesibles, sin overflow.
 - [x] Cantidad y “Añadir al carrito” tienen ahora una altura táctil mínima de 44 px en móvil mediante CSS reversible.
+- [x] El carrito móvil fue comprobado con producto, cantidad, subtotal, envío y enlace a checkout; no presenta overflow y sus acciones principales tienen 44 px.
+- [x] Las acciones de cupón y checkout del carrito tienen ahora objetivo táctil mínimo de 44 px en móvil mediante CSS reversible.
 - [x] El árbol accesible de Contacto expone los cuatro campos del formulario en orden: Nombre, Teléfono, Correo electrónico y Mensaje, junto con “Enviar mensaje”.
 - [x] Se midió una línea base de carga: la portada WordPress respondió en 3,13 s con 108 KB de HTML y la Tienda en 1,45 s con 112 KB; la maqueta pública respondió en aproximadamente 0,25 s.
 - [x] Los scripts públicos `script.js` y `tienda.js` pasan comprobación de sintaxis y el repositorio no presenta errores de whitespace.
