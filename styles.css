@@ -75,3 +75,47 @@ body{font-family:'Montserrat',Arial,sans-serif}
   .header-actions a[aria-label="Mi cuenta"]{display:none!important}
   .header-actions .cart-button{display:grid!important}
 }
+
+/* Cierre de portada: el mismo flujo cambia de prioridad entre escritorio y móvil. */
+main#contenido{display:flex;flex-direction:column}
+main#contenido > [data-elementor-section="hero"]{order:1}
+main#contenido > [data-elementor-section="beneficios"]{order:2}
+main#contenido > [data-elementor-section="categorias"]{order:3}
+main#contenido > [data-elementor-section="productos-destacados"]{order:4}
+main#contenido > [data-elementor-section="promocion"]{order:5}
+main#contenido > [data-elementor-section="cta-intermedio"]{order:6}
+main#contenido > [data-elementor-section="cta-final"]{order:7}
+.promo-section{padding-top:105px}
+.promo-carousel{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.promo-card{min-height:285px;display:flex;align-items:flex-end;justify-content:space-between;gap:14px;padding:26px;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;isolation:isolate}
+.promo-card__copy{position:relative;z-index:2;max-width:62%}
+.promo-card__label{display:block;margin-bottom:10px;font-size:9px;font-weight:800;letter-spacing:.14em;color:var(--blue)}
+.promo-card h3{margin:0;font-size:24px;line-height:1.08;letter-spacing:-.04em}
+.promo-card p{margin:10px 0 17px;color:#667085;font-size:12px;line-height:1.5}
+.promo-card .button{min-height:44px;padding-inline:15px}
+.promo-card img{width:46%;height:180px;object-fit:contain;mix-blend-mode:multiply;filter:drop-shadow(0 16px 18px rgba(20,46,87,.14))}
+.promo-card--blue{background:var(--accentSoft);border-color:#cbdcff}.promo-card--blue h3{color:var(--ink)}
+.promo-card--soft{background:var(--soft)}.promo-card--dark{background:var(--ink);border-color:var(--ink);color:#fff}.promo-card--dark h3{color:#fff}.promo-card--dark p{color:#c2cada}.promo-card--dark .promo-card__label{color:#9fc0ff}.promo-card--dark img{mix-blend-mode:screen}
+.category-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+@media (max-width:1050px){.category-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.promo-carousel{grid-template-columns:repeat(3,minmax(260px,1fr));overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:8px}.promo-card{scroll-snap-align:start}}
+@media (max-width:820px){
+  main#contenido > [data-elementor-section="hero"]{order:1}
+  main#contenido > [data-elementor-section="promocion"]{order:2}
+  main#contenido > [data-elementor-section="productos-destacados"]{order:3}
+  main#contenido > [data-elementor-section="categorias"]{order:4}
+  main#contenido > [data-elementor-section="beneficios"]{order:5}
+  .promo-section{padding-top:72px}
+  .promo-carousel{grid-template-columns:repeat(3,minmax(300px,1fr));margin-right:-18px;padding-right:18px;gap:10px}
+  .promo-card{min-height:250px;padding:21px}
+  .promo-card h3{font-size:21px}
+  .promo-card img{height:145px;width:42%}
+  .category-grid{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .promo-carousel{grid-template-columns:repeat(3,minmax(280px,1fr));margin-right:-16px;padding-right:16px}
+  .promo-card{min-height:226px;padding:18px}
+  .promo-card__copy{max-width:67%}
+  .promo-card h3{font-size:20px}
+  .promo-card p{font-size:11px;margin-bottom:13px}
+  .promo-card img{height:125px}
+}
