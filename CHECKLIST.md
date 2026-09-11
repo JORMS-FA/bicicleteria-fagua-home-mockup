@@ -177,6 +177,7 @@ Esta es la puerta de aprobación antes de pasar a la Tienda nativa. Cada punto d
 - [x] La portada tiene una meta descripción SEO única en español, comprobada en el HTML público.
 - [x] La página Tienda tiene una meta descripción SEO única en español, comprobada en el HTML público.
 - [x] Las fichas de producto generan una meta descripción SEO desde el extracto real del producto.
+- [x] Las categorías de WooCommerce generan una meta descripción SEO desde su descripción o nombre real.
 - [ ] Validación final de copy, promociones, precios y datos legales por el propietario.
 
 ### Filtro móvil de Tienda — comprobado
