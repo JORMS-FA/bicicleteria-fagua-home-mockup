@@ -100,6 +100,7 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] La búsqueda móvil de Blocksy quedó traducida a español (“Buscar productos”, “Escribe para buscar” y “Cerrar búsqueda”) y se comprobó una consulta real de “bicicleta”.
 - [x] Las etiquetas comerciales de WooCommerce “SALE” y “SOLD OUT” quedaron traducidas como “OFERTA” y “AGOTADO”; se verificó que no queden textos ingleses visibles.
 - [x] Se revisaron los enlaces internos de portada, Tienda, Contacto, Nosotros, Taller y páginas legales; no quedan referencias a URLs antiguas de cookies ni al agregado de políticas.
+- [x] Se buscó en páginas, productos y ajustes un teléfono o correo público adicional; solo existe el correo administrativo de WordPress y no se expone automáticamente en los legales.
 - [x] Se midió una línea base de carga: la portada WordPress respondió en 3,13 s con 108 KB de HTML y la Tienda en 1,45 s con 112 KB; la maqueta pública respondió en aproximadamente 0,25 s.
 - [x] Los scripts públicos `script.js` y `tienda.js` pasan comprobación de sintaxis y el repositorio no presenta errores de whitespace.
 - [x] Los enlaces de la maqueta pública fueron alineados con las rutas canónicas activas (`/nosotros/`, `/contacto/`, `/terminos-condiciones/` y `/servicio-tecnico/`); las cinco rutas responden con HTTP 200.
