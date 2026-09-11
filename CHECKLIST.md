@@ -172,6 +172,7 @@ Esta es la puerta de aprobación antes de pasar a la Tienda nativa. Cada punto d
 - [x] Accesibilidad: un H1, jerarquía de encabezados, nombres accesibles, alt de imágenes, foco visible y sin overflow horizontal.
 - [x] Los CTA de Elementor y las acciones de productos destacados miden al menos 44 px en móvil.
 - [x] Los enlaces “Ver categoría” de la portada también miden al menos 44 px en móvil.
+- [x] En escritorio no hay overflow ni imágenes sin `alt`; los enlaces adicionales del menú se agrupan en “Más” mediante un desplegable accesible.
 - [ ] Validación final de copy, promociones, precios y datos legales por el propietario.
 
 ### Filtro móvil de Tienda — comprobado
