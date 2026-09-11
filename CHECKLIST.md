@@ -9,7 +9,7 @@
 - [x] Fondo atenuado, scroll bloqueado y foco accesible al abrir el menú.
 - [x] Barra superior de una línea, sin pausa y con bandera colombiana consistente.
 - [x] Hero responsive con CTA principal y CTA secundario.
-- [x] Hero incluye imagen real de producto como widget nativo de Elementor, con texto alternativo y enlace a la ficha WooCommerce.
+- [x] Hero incluye en la maqueta una imagen real de producto, con texto alternativo y enlace de referencia a la ficha WooCommerce; su equivalente como widget nativo de Elementor está comprobado en la auditoría de WordPress.
 - [x] Productos reales con imagen, nombre, precio, disponibilidad y acción de compra.
 - [x] Sin desplazamiento horizontal en móvil.
 - [x] Imágenes con texto alternativo y botones táctiles amplios.
@@ -90,6 +90,7 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] La imagen destacada visible de la ficha de producto carga con prioridad (`eager`/`fetchpriority=high`); las imágenes secundarias conservan carga diferida.
 - [x] La ficha de producto muestra “Disponible” solo cuando el stock real lo permite; WooCommerce conserva su señal nativa para “Agotado”, sin inventar cantidades.
 - [x] Los productos con estado WooCommerce `onbackorder` se muestran como “Disponible bajo pedido”, diferenciados de la disponibilidad inmediata.
+- [ ] En las fichas `onbackorder`, armonizar el aviso personalizado “Disponible bajo pedido” con el aviso nativo “Disponible para reserva” para evitar duplicación o confusión.
 - [x] El aviso nativo de producto agotado expone `role="status"` para lectores de pantalla sin cambiar el flujo de compra.
 - [x] La ficha de producto GW Lynx fue comprobada en viewport móvil: un H1, galería con `alt`, precio, cantidad y “Añadir al carrito” accesibles, sin overflow.
 - [x] Los botones de añadir al carrito de las tarjetas usan el permalink del producto correspondiente; se corrigió el caso relacionado Lynx/Falcon sin cambiar el ID AJAX.
