@@ -116,6 +116,7 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] En Aviso Legal (ID 1044) se retiró el H2 redundante “Aviso legal”; el cambio conserva copia de respaldo reversible y la página mantiene un solo H1.
 - [x] Se retiró el encabezado redundante de Servicio Técnico; la página conserva un único H1 y no presenta overflow móvil.
 - [x] El formulario WPForms de Contacto conserva sus etiquetas y ahora tiene campos y botón de envío con objetivo táctil mínimo de 44 px en móvil.
+- [x] Servicio Técnico (ID 660) conserva su contenido de taller y ahora enlaza su CTA de agenda al formulario canónico de Contacto; se guardó el respaldo `fagua_backup_page_660_before_contact_cta_20260911`.
 - [x] Los subtítulos de Servicio Técnico y las páginas legales quedaron normalizados como H2; se verificó un solo H1 y cero H3 innecesarios.
 - [x] La búsqueda móvil de Blocksy quedó traducida a español (“Buscar productos”, “Escribe para buscar” y “Cerrar búsqueda”) y se comprobó una consulta real de “bicicleta”.
 - [x] Las etiquetas comerciales de WooCommerce “SALE” y “SOLD OUT” quedaron traducidas como “OFERTA” y “AGOTADO”; se verificó que no queden textos ingleses visibles.
