@@ -113,7 +113,7 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] Los subtítulos de Servicio Técnico y las páginas legales quedaron normalizados como H2; se verificó un solo H1 y cero H3 innecesarios.
 - [x] La búsqueda móvil de Blocksy quedó traducida a español (“Buscar productos”, “Escribe para buscar” y “Cerrar búsqueda”) y se comprobó una consulta real de “bicicleta”.
 - [x] Las etiquetas comerciales de WooCommerce “SALE” y “SOLD OUT” quedaron traducidas como “OFERTA” y “AGOTADO”; se verificó que no queden textos ingleses visibles.
-- [x] Se revisaron los enlaces internos de portada, Tienda, Contacto, Nosotros, Taller y páginas legales; no quedan referencias a URLs antiguas de cookies ni al agregado de políticas.
+- [x] Se revisaron los enlaces internos de portada, Tienda, Contacto, Nosotros, Servicio Técnico y páginas legales; no quedan referencias a URLs antiguas de cookies ni al agregado de políticas.
 - [x] Se distinguieron los dos productos Shore Color Dirty Gold como “· Hombre” y “· Mujer”; conservan SKU, stock e imágenes independientes.
 - [x] Se buscó en páginas, productos y ajustes un teléfono o correo público adicional; solo existe el correo administrativo de WordPress y no se expone automáticamente en los legales.
 - [x] La instalación usa locale `es_CO`, zona horaria UTC−05:00 y moneda COP; se verificó en la configuración activa de WooCommerce.
