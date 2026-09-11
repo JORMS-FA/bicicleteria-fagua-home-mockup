@@ -24,6 +24,7 @@
 - [x] La franja se detiene al recibir foco o al pasar el cursor y respeta `prefers-reduced-motion`, sin añadir un botón visible.
 - [x] En una vista móvil de 319 px de ancho no se detectó overflow horizontal.
 - [x] Jerarquía de encabezados comprobada: un H1 para la portada y H2 para las secciones.
+- [x] En GitHub Pages, Inicio y Tienda navegan dentro de la maqueta; categorías y fichas conservan enlaces al WordPress real, sin alterar la navegación de producción.
 
 ## Portada — pendiente de aprobación del propietario
 
