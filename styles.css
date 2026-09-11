@@ -131,3 +131,16 @@ main#contenido > [data-elementor-section="cta-final"]{order:7}
   .promo-card p{font-size:11px;margin-bottom:13px}
   .promo-card img{height:125px}
 }
+
+/* Última capa de escritorio: dos grupos separados protegen el eje central del logo. */
+@media (min-width:821px){
+  .header__inner{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);position:relative;gap:0;min-height:88px}
+  .brand{grid-column:2;grid-row:1;position:static;transform:none;justify-content:center;z-index:4}
+  .site-nav{grid-column:1 / -1;grid-row:1;position:static;display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:0;margin:0;padding:0;min-width:0}
+  .site-nav > .nav-close{display:none!important}
+  .site-nav__group{display:flex;align-items:center;min-width:0;gap:clamp(13px,1.6vw,23px)}
+  .site-nav__group--left{grid-column:1;justify-content:flex-start;padding-right:28px}
+  .site-nav__group--right{grid-column:2;justify-content:flex-start;padding-left:28px;padding-right:126px}
+  .site-nav__link{font-size:11px;padding:30px 0;white-space:nowrap}
+  .header-actions{grid-column:3;grid-row:1;justify-self:end;z-index:5;margin:0;background:#fff}
+}
