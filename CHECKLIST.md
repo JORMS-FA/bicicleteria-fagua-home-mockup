@@ -212,6 +212,7 @@ Esta es la puerta de aprobación antes de pasar a la Tienda nativa. Cada punto d
 - [x] Aviso Legal: se retiraron los placeholders visibles y las referencias a normativa española; la dirección real quedó incorporada y correo/teléfono remiten al formulario de Contacto sin inventar datos.
 - [x] Privacidad: se retiraron los placeholders visibles y las referencias a GDPR/LOPDGDD; el canal de ejercicio de derechos remite al formulario de Contacto.
 - [x] Los canales de Contacto en ambas páginas legales son enlaces accesibles, no URLs largas pegadas como texto.
+- [x] Los helpers de páginas del tema activo quedaron endurecidos con contenido neutral colombiano, rutas reales y WPForms 579; no incluyen placeholders, normativa española, analítica ni promesas comerciales no confirmadas. `functions.php` pasó `php -l` y conserva el respaldo `before-neutral-page-helpers-20260911`.
 - [ ] Aviso Legal y Privacidad: revisión jurídica final con el propietario sobre responsable legal y marco aplicable en Colombia; la revisión técnica no sustituye asesoría jurídica.
 - [x] Cookies: se documentaron las cookies técnicas observadas y se retiró la afirmación no comprobada de Google Analytics/remarketing.
 - [x] Cookies: no se observaron herramientas opcionales activas; si se incorporan, se deberá actualizar la política y activar el consentimiento antes de usarlas.
