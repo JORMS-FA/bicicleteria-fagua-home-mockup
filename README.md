@@ -9,6 +9,8 @@ Esta carpeta contiene una maqueta visual independiente para aprobar la direcció
 - [Checklist de aceptación](CHECKLIST.md)
 - [Plan de implementación nativa en WordPress](WORDPRESS-NATIVE-IMPLEMENTATION.md)
 
+En GitHub Pages, los enlaces de Inicio y Tienda permanecen dentro de esta maqueta para facilitar la revisión desde el teléfono. Las categorías, fichas de producto, carrito y checkout siguen apuntando al WordPress real; esa adaptación solo se activa en el dominio de la maqueta.
+
 ## Archivos
 
 - `index.html`: estructura semántica de la portada.
