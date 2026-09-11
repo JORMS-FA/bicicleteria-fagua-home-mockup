@@ -79,9 +79,11 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] La cabecera activa conserva menú, logo centrado, búsqueda y carrito; el panel móvil está configurado a la izquierda.
 - [x] La franja de envíos se añadió como contenido editable de Elementor, con bandera CSS y texto accesible.
 - [x] Los destacados se limitaron a cuatro productos reales actualmente disponibles mediante shortcode de WooCommerce.
-- [ ] Resolver duplicados: “Nosotros y contacto” frente a “Nosotros” + “Contacto”.
+- [x] Contacto canónico actualizado: el enlace del menú y el CTA de asesoría apuntan a `/contacto/`; la página antigua se conserva como respaldo hasta aprobar su archivado.
+- [x] La página Contacto conserva dirección, horario y formulario WPForms 579; el formulario vuelve a renderizarse con etiquetas y confirmación en español.
+- [ ] Resolver duplicados: “Nosotros y contacto” frente a “Nosotros” + “Contacto” (requiere aprobación antes de archivar páginas).
 - [ ] Resolver duplicados entre “Políticas y condiciones” y las páginas legales individuales.
-- [ ] Corregir el menú después de decidir qué páginas se conservan.
+- [x] Corregir el menú: `Primary` quedó asignado a Blocksy y el enlace Contacto ya no apunta a la página duplicada.
 - [ ] Probar checkout con un producto real y no únicamente con carrito vacío.
 
 ### Estado de trabajo recomendado
@@ -99,8 +101,8 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] Se encontraron tres menús: `Main Menu`, `Menú Principal` y `Primary`.
 - [x] `Primary` contiene 8 enlaces: Inicio, Tienda, Bicicletas, Componentes, Indumentaria, Accesorios, Servicio Técnico y Contacto.
 - [x] `Main Menu` y `Menú Principal` contienen enlaces parciales que duplican categorías o Inicio.
-- [x] La lectura de ubicaciones del tema devolvió `nav_menu_locations` vacío; antes de editar hay que confirmar qué menú está mostrando Blocksy en su constructor de cabecera.
-- [x] Crear una copia/referencia del menú activo y asignar una sola navegación principal; queda pendiente decidir si `Indumentaria` permanece visible.
+- [x] La lectura inicial devolvió `nav_menu_locations` vacío; se confirmó la cabecera activa de Blocksy y se asignó explícitamente `Primary` a sus ubicaciones.
+- [x] Se creó una copia/referencia del menú activo y se dejó una sola navegación principal de 8 enlaces; queda pendiente decidir si `Indumentaria` permanece visible.
 
 No se deben borrar páginas ni desinstalar WooCommerce durante la fase de diagnóstico. Primero se decide la página canónica y se comprueban sus referencias en WooCommerce y el menú.
 
