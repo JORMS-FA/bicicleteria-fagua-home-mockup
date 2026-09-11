@@ -86,7 +86,8 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] Contacto canónico actualizado: el enlace del menú y el CTA de asesoría apuntan a `/contacto/`; la página antigua se conserva como respaldo hasta aprobar su archivado.
 - [x] La página Contacto conserva dirección, horario y formulario WPForms 579; el formulario vuelve a renderizarse con etiquetas y confirmación en español.
 - [x] Resolver duplicados: “Nosotros y contacto” pasó a borrador reversible; “Nosotros” y “Contacto” quedan como páginas canónicas.
-- [ ] Resolver duplicados entre “Políticas y condiciones” y las páginas legales individuales.
+- [x] Resolver duplicados entre “Políticas y condiciones” y las páginas legales individuales: el agregado antiguo pasó a borrador reversible.
+- [ ] Completar datos legales faltantes (correo, teléfono y responsable legal) sin inventarlos.
 - [x] Corregir el menú: `Primary` quedó asignado a Blocksy y el enlace Contacto ya no apunta a la página duplicada.
 - [ ] Probar checkout con un producto real y no únicamente con carrito vacío.
 
