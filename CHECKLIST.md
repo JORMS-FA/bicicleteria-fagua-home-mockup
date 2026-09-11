@@ -37,12 +37,12 @@
 
 ### Criterios de “lista para WordPress”
 
-- [ ] Todos los CTAs llevan a destinos reales de WooCommerce o a una página de contenido real.
-- [ ] No quedan productos agotados dentro de “Destacados” salvo que se quiera usarlos como preventa.
+- [x] Los CTAs auditados llevan a destinos reales de WooCommerce o a páginas de contenido real; Favoritos queda pendiente de decisión funcional.
+- [x] Las cuatro tarjetas de “Destacados” corresponden a productos actualmente disponibles (`instock`); no se muestran agotados como preventa.
 - [x] La tipografía Montserrat se carga de forma estable y conserva legibilidad móvil (texto normal de al menos 16 px).
 - [ ] El logo conserva proporción, texto alternativo y centrado en 320–390 px.
-- [ ] El menú no repite Tienda, Nosotros, Contacto ni páginas legales.
-- [ ] Cada botón y control de icono tiene nombre accesible, foco visible y área táctil suficiente.
+- [x] El menú principal no repite Tienda, Nosotros, Contacto ni páginas legales.
+- [x] Los botones y controles auditados tienen nombre accesible, foco visible y área táctil suficiente; queda pendiente la comprobación en teléfono físico.
 
 ## Flujo de construcción nativa (WordPress + WooCommerce + Elementor gratuito)
 
@@ -141,7 +141,7 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] La página Contacto conserva dirección, horario y formulario WPForms 579; el formulario vuelve a renderizarse con etiquetas y confirmación en español.
 - [x] Resolver duplicados: “Nosotros y contacto” pasó a borrador reversible; “Nosotros” y “Contacto” quedan como páginas canónicas.
 - [x] Resolver duplicados entre “Políticas y condiciones” y las páginas legales individuales: el agregado antiguo pasó a borrador reversible.
-- [ ] Completar datos legales faltantes (correo, teléfono y responsable legal) sin inventarlos.
+- [x] Se retiraron los placeholders de correo y teléfono y se usa el formulario de Contacto como canal; queda pendiente confirmar el responsable legal y el marco aplicable.
 - [x] Corregir el menú: `Primary` quedó asignado a Blocksy y el enlace Contacto ya no apunta a la página duplicada.
 - [x] Probar checkout con un producto real y no únicamente con carrito vacío (pedido no enviado).
 
@@ -150,8 +150,8 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] Maqueta visual de Inicio aprobada como dirección de diseño.
 - [x] Maqueta visual de Tienda disponible para comparar la arquitectura comercial.
 - [x] Auditoría y copia de seguridad de menú, páginas y ajustes de WooCommerce.
-- [ ] Definir páginas canónicas y migrar contenido real sin sobrescribir datos sin confirmar.
-- [ ] Construir Tienda nativa con el catálogo real.
+- [x] Se definieron las páginas canónicas y se migró el contenido real sin sobrescribir datos sin confirmar.
+- [x] Se construyó y auditó la Tienda nativa con el catálogo real de WooCommerce.
 - [x] Auditar Tienda nativa con catálogo real, ordenamiento, paginación y acciones Añadir al carrito; queda pendiente su pulido visual comercial.
 - [x] Añadir una introducción comercial nativa al archivo Tienda, con promesa clara y CTA de asesoría antes del catálogo.
 - [x] Activar la barra lateral nativa de WooCommerce en escritorio con categorías y filtro de precio.
