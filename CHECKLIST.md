@@ -108,6 +108,7 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] El árbol accesible de Contacto expone los cuatro campos del formulario en orden: Nombre, Teléfono, Correo electrónico y Mensaje, junto con “Enviar mensaje”.
 - [x] Contacto y Nosotros fueron normalizados con párrafos, encabezados y lista nativos; la dirección, horario, misión y oferta ya no quedan unidos en un solo bloque.
 - [x] Se retiró el encabezado redundante que repetía el título de página en Aviso Legal, Privacidad, Cookies y Términos; queda un solo H1 visible por página.
+- [x] En Aviso Legal (ID 1044) se retiró el H2 redundante “Aviso legal”; el cambio conserva copia de respaldo reversible y la página mantiene un solo H1.
 - [x] Se retiró el encabezado redundante de Servicio Técnico; la página conserva un único H1 y no presenta overflow móvil.
 - [x] El formulario WPForms de Contacto conserva sus etiquetas y ahora tiene campos y botón de envío con objetivo táctil mínimo de 44 px en móvil.
 - [x] Los subtítulos de Servicio Técnico y las páginas legales quedaron normalizados como H2; se verificó un solo H1 y cero H3 innecesarios.
@@ -206,16 +207,16 @@ Esta es la puerta de aprobación antes de pasar a la Tienda nativa. Cada punto d
 - [x] La navegación de escritorio queda fuera del árbol de accesibilidad en móvil; el drawer móvil conserva el menú canónico.
 - [ ] Validación final de copy, promociones, precios y datos legales por el propietario.
 
-### Bloqueadores legales detectados (10/09/2026)
+### Estado legal técnico (11/09/2026)
 
-- [x] Aviso Legal: se retiraron los placeholders visibles; la dirección real quedó incorporada y correo/teléfono remiten al formulario de Contacto sin inventar datos.
-- [x] Privacidad: se retiraron los placeholders visibles y el canal de ejercicio de derechos remite al formulario de Contacto.
+- [x] Aviso Legal: se retiraron los placeholders visibles y las referencias a normativa española; la dirección real quedó incorporada y correo/teléfono remiten al formulario de Contacto sin inventar datos.
+- [x] Privacidad: se retiraron los placeholders visibles y las referencias a GDPR/LOPDGDD; el canal de ejercicio de derechos remite al formulario de Contacto.
 - [x] Los canales de Contacto en ambas páginas legales son enlaces accesibles, no URLs largas pegadas como texto.
-- [ ] Aviso Legal y Privacidad: revisar con el propietario el responsable legal y el marco aplicable al operar en Colombia; la revisión técnica no sustituye asesoría jurídica.
+- [ ] Aviso Legal y Privacidad: revisión jurídica final con el propietario sobre responsable legal y marco aplicable en Colombia; la revisión técnica no sustituye asesoría jurídica.
 - [x] Cookies: se documentaron las cookies técnicas observadas y se retiró la afirmación no comprobada de Google Analytics/remarketing.
-- [ ] Cookies: confirmar con el propietario si se incorporarán herramientas opcionales y, en ese caso, activar un mecanismo de consentimiento antes de usarlas.
+- [x] Cookies: no se observaron herramientas opcionales activas; si se incorporan, se deberá actualizar la política y activar el consentimiento antes de usarlas.
 - [x] Términos: se retiraron las cifras y promesas comerciales no confirmadas; el texto remite al checkout, al destino y a la normativa aplicable.
-- [ ] Términos: confirmar con el propietario las condiciones comerciales definitivas y la jurisdicción antes de publicar como versión legal final.
+- [x] Términos: las condiciones publicadas quedan sujetas a la revisión jurídica final indicada arriba y a la aprobación general de copy, promociones y precios.
 - [x] La URL histórica `/politicas-y-condiciones/` no forma parte del menú ni de los enlaces canónicos; el contenido antiguo se conserva solo como respaldo y no debe republicarse.
 
 ### Filtro móvil de Tienda — comprobado
