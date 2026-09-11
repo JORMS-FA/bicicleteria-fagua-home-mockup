@@ -200,7 +200,8 @@ Esta es la puerta de aprobación antes de pasar a la Tienda nativa. Cada punto d
 - [ ] Aviso Legal y Privacidad: revisar con el propietario el responsable legal y el marco aplicable al operar en Colombia; la revisión técnica no sustituye asesoría jurídica.
 - [x] Cookies: se documentaron las cookies técnicas observadas y se retiró la afirmación no comprobada de Google Analytics/remarketing.
 - [ ] Cookies: confirmar con el propietario si se incorporarán herramientas opcionales y, en ese caso, activar un mecanismo de consentimiento antes de usarlas.
-- [ ] Términos: confirmar IVA, medios de pago, plazos de envío, devoluciones, garantía y jurisdicción antes de aprobar condiciones comerciales.
+- [x] Términos: se retiraron las cifras y promesas comerciales no confirmadas; el texto remite al checkout, al destino y a la normativa aplicable.
+- [ ] Términos: confirmar con el propietario las condiciones comerciales definitivas y la jurisdicción antes de publicar como versión legal final.
 - [x] La URL histórica `/politicas-y-condiciones/` no forma parte del menú ni de los enlaces canónicos; el contenido antiguo se conserva solo como respaldo y no debe republicarse.
 
 ### Filtro móvil de Tienda — comprobado
