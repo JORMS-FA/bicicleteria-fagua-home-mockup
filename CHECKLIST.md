@@ -198,6 +198,7 @@ Esta es la puerta de aprobación antes de pasar a la Tienda nativa. Cada punto d
 - [x] Se añadió un respaldo nativo en `wp_get_attachment_image_attributes` para heredar el nombre del producto cuando una miniatura llegue sin `alt`; se verificó en una carga nueva de Inicio.
 - [x] El mini-carrito de Blocksy/WooCommerce también conserva el nombre del producto en la miniatura cuando su plantilla intenta emitir `alt=""`; se verificó en una sesión nueva y se conserva `fagua-mobile-shop-filters.php.bak-mini-cart-alt-20260911`.
 - [x] La introducción comercial de Tienda se compactó de forma reversible para adelantar el primer producto sin retirar la promesa ni el CTA de asesoría; en escritorio pasó de ~293 px a ~206 px.
+- [x] La paginación de Tienda usa un objetivo táctil mínimo de 44 px en móvil (`nav.ct-pagination`); “Siguiente” fue verificado a 44 px sin overflow y se conserva `fagua_backup_custom_css_288_before_pagination_touch_fix2_20260911`.
 - [x] La comprobación posterior confirma en móvil de 390 px una introducción de ~258 px, CTA visible y comienzo del primer producto dentro del primer pantallazo; a 320 px no hay overflow y los controles siguen en 44 px.
 - [x] El control de quitar productos del mini-carrito también expone ahora una etiqueta accesible en español, sin alterar sus enlaces ni fragmentos AJAX.
 - [x] Los CTA de Elementor y las acciones de productos destacados miden al menos 44 px en móvil.
