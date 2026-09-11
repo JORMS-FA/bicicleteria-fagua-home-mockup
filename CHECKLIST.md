@@ -183,6 +183,7 @@ Esta es la puerta de aprobación antes de pasar a la Tienda nativa. Cada punto d
 - [x] El estado vacío de búsqueda muestra “Sin resultados” y conserva un campo accesible para intentar otra búsqueda.
 - [x] Accesibilidad: un H1, jerarquía de encabezados, nombres accesibles, alt de imágenes, foco visible y sin overflow horizontal.
 - [x] Se completó el texto alternativo de la imagen destacada de la bicicleta GW Falcon (ID 647); las tarjetas visibles de Tienda ya no tienen imágenes de producto sin `alt`.
+- [x] Se completó el texto alternativo de la imagen de la Cadenilla Shimano CN-HG40 (adjunto ID 632); la auditoría posterior de Inicio no encontró imágenes de producto visibles sin `alt`.
 - [x] El control de quitar productos del mini-carrito también expone ahora una etiqueta accesible en español, sin alterar sus enlaces ni fragmentos AJAX.
 - [x] Los CTA de Elementor y las acciones de productos destacados miden al menos 44 px en móvil.
 - [x] Los enlaces “Ver categoría” de la portada también miden al menos 44 px en móvil.
