@@ -153,6 +153,7 @@ Esta es la puerta de aprobación antes de pasar a la Tienda nativa. Cada punto d
 - [x] El panel usa categorías y conteos del catálogo real; no contiene productos HTML duplicados.
 - [x] “Solo disponibles” y “Agotados” modifican la consulta principal y devuelven resultados coherentes.
 - [x] El rango mínimo/máximo usa los parámetros nativos de WooCommerce.
+- [x] Los campos de precio vacíos se eliminan antes de consultar, evitando estados vacíos falsos al combinar categoría y disponibilidad.
 - [x] El panel tiene etiquetas, campos con IDs únicos, botones de 44 px y enlace para limpiar filtros.
 - [x] En escritorio permanece oculto y el sidebar nativo sigue disponible.
 - [ ] Revisar con el propietario qué categorías comerciales deben destacarse y si conviene enviar agotados al final.
