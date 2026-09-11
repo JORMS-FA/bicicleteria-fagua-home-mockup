@@ -53,7 +53,7 @@
 5. **Reconstruir Inicio directamente en WordPress.** Usar widgets nativos de Elementor (contenedores/columnas, encabezados, imágenes, botones, iconos y separadores) y bloques o componentes nativos de WooCommerce/Blocksy. No pegar una página completa en un widget HTML.
 6. **Usar Blocksy para lo global.** Con Elementor gratuito, el encabezado, el menú, el pie y las plantillas globales de WooCommerce se resuelven con Blocksy/Customizer. Elementor gratuito edita el contenido de la página, pero no sustituye por sí solo el Theme Builder de Elementor Pro.
 7. **Crear contenido y legal.** Consolidar Nosotros, Contacto y Taller; mantener las páginas legales separadas en el pie; no publicar textos con placeholders como `[Tu email]`.
-8. **Configurar el menú canónico.** Inicio, Tienda, Bicicletas, Componentes, Accesorios, Taller y Nosotros/Contacto. Carrito y Mi cuenta quedan como iconos o enlaces secundarios; las páginas legales no van en el menú principal.
+8. **Configurar el menú canónico.** Inicio, Tienda, Bicicletas, Componentes, Accesorios, Servicio Técnico y Contacto. Carrito y Mi cuenta quedan como iconos o enlaces secundarios; Nosotros y las páginas legales permanecen en el pie.
 9. **Hacer pruebas por puertas.** Después de cada página se verifica móvil, escritorio, teclado, lector de pantalla, enlaces, formulario, carrito y checkout antes de pasar a la siguiente.
 10. **Publicar solo después del recorrido completo.** Probar producto → carrito → checkout → confirmación, formularios y estados vacíos; luego revisar rendimiento y hacer una copia de seguridad.
 
