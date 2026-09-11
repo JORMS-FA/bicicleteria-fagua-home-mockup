@@ -1,4 +1,16 @@
 const ghAssets='https://jorms-fa.github.io/bicicleteria-fagua-home-mockup/assets/';
+// En GitHub Pages, conserva la navegación de la maqueta sin tocar los enlaces
+// canónicos del sitio real de WordPress.
+function configurePreviewLinks(){
+  if(!location.hostname.endsWith('.github.io'))return;
+  document.querySelector('base')?.remove();
+  document.querySelectorAll('a[href]').forEach(link=>{
+    const href=link.getAttribute('href');
+    if(href==='/'||href==='./')link.setAttribute('href','./index.html');
+    else if(href==='/tienda/')link.setAttribute('href','./tienda.html');
+  });
+}
+configurePreviewLinks();
 const products=[
   {id:611,name:'Bicicleta GW Lynx 3×7 Velocidades MTB Rin 29',category:'MTB',price:1250000,image:ghAssets+'product-611.png',url:'/producto/bicicleta-gw-lynx-verde-29/',stock:true,tag:'MÁS ELEGIDA'},
   {id:69,name:'Bicicleta GW Falcon 3×8 Velocidades MTB Rin 29',category:'MTB',price:950000,image:ghAssets+'product-69.jpeg',url:'/producto/gw-falcon-29/',stock:true,tag:'FAVORITA'},

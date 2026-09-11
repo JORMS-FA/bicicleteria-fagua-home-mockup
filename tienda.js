@@ -1,3 +1,15 @@
+// En GitHub Pages, conserva la navegación de la maqueta sin tocar los enlaces
+// canónicos del sitio real de WordPress.
+function configurePreviewLinks(){
+  if(!location.hostname.endsWith('.github.io'))return;
+  document.querySelector('base')?.remove();
+  document.querySelectorAll('a[href]').forEach(link=>{
+    const href=link.getAttribute('href');
+    if(href==='/'||href==='./')link.setAttribute('href','./index.html');
+    else if(href==='/tienda/')link.setAttribute('href','./tienda.html');
+  });
+}
+configurePreviewLinks();
 const shopAssets='https://jorms-fa.github.io/bicicleteria-fagua-home-mockup/assets/';
 const shopProducts=[
   {id:611,name:'Bicicleta GW Lynx 3×7 Velocidades MTB Rin 29',category:'MTB',price:1250000,image:shopAssets+'product-611.png',url:'/producto/bicicleta-gw-lynx-verde-29/',stock:true,tag:'MÁS ELEGIDA'},
