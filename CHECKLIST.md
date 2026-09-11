@@ -16,7 +16,7 @@
 
 ### Evidencia de la última revisión
 
-- [x] Orden comercial: hero → beneficios → productos destacados → categorías → asesoría → CTA final.
+- [x] Orden comercial responsive: escritorio hero → beneficios → categorías → destacados → promoción; móvil hero → promoción → destacados → categorías → confianza/asesoría.
 - [x] Una sola sección de productos destacados; no hay duplicación accidental.
 - [x] Cuatro tarjetas destacadas con enlace de producto, precio, disponibilidad y CTA.
 - [x] Menú lateral probado como panel fuera de pantalla: entra de izquierda a derecha, tiene cierre visible, Escape, fondo atenuado, bloqueo de scroll y retorno del foco al botón de menú.
@@ -259,10 +259,10 @@ La maqueta pública sirve para comparar composición y conversión. La versión 
 ### Auditoría de menús de WordPress (solo lectura)
 
 - [x] Se encontraron tres menús: `Main Menu`, `Menú Principal` y `Primary`.
-- [x] `Primary` contiene 7 enlaces: Inicio, Tienda, Bicicletas, Componentes, Accesorios, Servicio Técnico y Contacto.
+- [x] `Primary` contiene 9 enlaces: Inicio, Tienda, cinco categorías comerciales, Servicio Técnico y Contacto.
 - [x] `Main Menu` y `Menú Principal` contienen enlaces parciales que duplican categorías o Inicio.
 - [x] La lectura inicial devolvió `nav_menu_locations` vacío; se confirmó la cabecera activa de Blocksy y se asignó explícitamente `Primary` a sus ubicaciones.
-- [x] Se creó una copia/referencia del menú activo y se dejó una sola navegación principal de 7 enlaces; `Indumentaria` se ocultó del menú porque actualmente no tiene productos, sin borrar la categoría.
+- [x] Se creó una copia/referencia del menú activo y se dejó una sola navegación principal de 9 enlaces; las categorías vacías no se borraron.
 
 No se deben borrar páginas ni desinstalar WooCommerce durante la fase de diagnóstico. Primero se decide la página canónica y se comprueban sus referencias en WooCommerce y el menú.
 

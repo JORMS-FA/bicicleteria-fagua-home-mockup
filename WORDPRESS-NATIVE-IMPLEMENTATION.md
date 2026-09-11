@@ -18,7 +18,7 @@ Este documento separa la maqueta visual de la implementación real. La maqueta s
 1. **Hero:** contenedor de layout + Heading + Text Editor + Image + Buttons.
 2. **Beneficios:** cuatro columnas o tarjetas con Icon, Heading y Text Editor.
 3. **Productos destacados:** bloque/loop de WooCommerce o widget Products disponible; la fuente debe ser el catálogo real y excluir agotados.
-4. **Categorías:** tarjetas enlazadas a categorías reales (`Bicicletas`, `Componentes`, `Accesorios`).
+4. **Categorías:** tarjetas enlazadas a las cinco rutas comerciales reales (`Bicicletas`, `Componentes`, `Accesorios`, `Ropa`, `Ofertas`).
 5. **Promoción:** sección de oferta con un único CTA principal y texto editable.
 6. **Asesoría:** Heading + Text Editor + Button hacia Contacto o WPForms.
 7. **Pie:** Blocksy/Customizer, con políticas y contacto.
@@ -36,11 +36,11 @@ Elementor gratuito no sustituye el Theme Builder de Elementor Pro. Por eso las p
 
 ## Menú principal actual y regla de simplificación
 
-El menú `Primary` (ID 124) está asignado a las ubicaciones activas de Blocksy y contiene siete entradas comprobadas:
+El menú `Primary` (ID 124) está asignado a las ubicaciones activas de Blocksy y contiene nueve entradas comprobadas:
 
-`Inicio · Tienda · Bicicletas · Componentes · Accesorios · Servicio Técnico · Contacto`
+`Inicio · Tienda · Bicicletas · Componentes · Accesorios · Ropa · Ofertas · Servicio Técnico · Contacto`
 
-Carrito y Mi Cuenta quedan como iconos secundarios. `Nosotros` se mantiene como página informativa enlazada desde el pie, sin duplicar Contacto. Las páginas legales permanecen en el pie. `Indumentaria` se retiró de la navegación visible porque la categoría está vacía; la categoría y sus productos futuros no se borraron.
+Carrito y Mi Cuenta quedan como iconos secundarios. `Nosotros` se mantiene como página informativa enlazada desde el pie, sin duplicar Contacto. Las páginas legales permanecen en el pie. `Ropa` enlaza a `Jerseys` y `Ofertas` usa el filtro real de productos en oferta; ninguna categoría se borró.
 
 ## Puertas de verificación
 
@@ -75,4 +75,4 @@ La auditoría móvil confirmó el drawer desde la izquierda, foco y Escape, logo
 
 Corrección posterior: la salida de meta descripción y Open Graph usa saltos de línea reales y se mantiene dentro de `<head>`; se verificó que el `<body>` no contenga etiquetas `meta` ni texto literal `\\n`. En móvil, la navegación de escritorio se oculta para no duplicar enlaces en el árbol de accesibilidad; el drawer nativo de Blocksy conserva los enlaces y el foco.
 
-La auditoría final también corrigió el objetivo táctil del cierre del drawer a 44×44 px y añadió una etiqueta alternativa derivada del producto para miniaturas del mini-carrito cuando una plantilla de Blocksy emite `alt=""`; ambos cambios conservan respaldos reversibles. La maqueta pública quedó sincronizada con Montserrat, el menú canónico de siete enlaces y las rutas actuales de producto/categoría.
+La auditoría final también corrigió el objetivo táctil del cierre del drawer a 44×44 px y añadió una etiqueta alternativa derivada del producto para miniaturas del mini-carrito cuando una plantilla de Blocksy emite `alt=""`; ambos cambios conservan respaldos reversibles. La maqueta pública quedó sincronizada con Montserrat, el menú canónico de nueve enlaces, cinco categorías y las rutas actuales de producto/categoría.

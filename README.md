@@ -28,7 +28,7 @@ La portada no debe pegarse como un widget HTML único. La reconstrucción poster
 
 - `hero`: contenedor de layout + Heading + Text Editor + Image + Buttons.
 - `beneficios`: cuatro bloques con Icon + Heading + Text Editor.
-- `categorias`: tres enlaces con Heading, Text Editor e Image/forma de fondo del contenedor.
+- `categorias`: cinco enlaces comerciales con Heading, Text Editor y botones nativos; el mismo bloque se reordena en móvil.
 - `productos-destacados`: Products/Loop Grid de WooCommerce o cuatro columnas con Image, Heading, Price y Button.
 - `cta-intermedio`: Heading + Text Editor + Button para asesoría de compra.
 - `cta-final`: Heading + Button.
