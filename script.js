@@ -26,7 +26,17 @@ menuToggle.addEventListener('click',()=>setMenu(!nav.classList.contains('is-open
 navScrim.addEventListener('click',()=>setMenu(false));
 navClose?.addEventListener('click',()=>setMenu(false));
 nav.querySelectorAll('.site-nav__link').forEach(link=>link.addEventListener('click',()=>setMenu(false)));
-document.addEventListener('keydown',event=>{if(event.key==='Escape'&&nav.classList.contains('is-open'))setMenu(false)});
+document.addEventListener('keydown',event=>{
+  if(!nav.classList.contains('is-open'))return;
+  if(event.key==='Escape'){event.preventDefault();setMenu(false);return}
+  if(event.key==='Tab'){
+    const focusables=[navClose,...nav.querySelectorAll('.site-nav__link')].filter(el=>el&& !el.disabled);
+    const first=focusables[0],last=focusables[focusables.length-1];
+    if(!first||!last)return;
+    if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus()}
+    else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus()}
+  }
+});
 const searchToggle=document.querySelector('.search-toggle'),searchPanel=document.querySelector('#search-panel');
 searchToggle.addEventListener('click',()=>{const open=searchPanel.hidden;searchPanel.hidden=!open;searchToggle.setAttribute('aria-expanded',open);if(open)document.querySelector('#product-search').focus()});
 document.querySelector('.search-form').addEventListener('submit',event=>{event.preventDefault();const query=document.querySelector('#product-search').value.trim().toLowerCase();renderProducts(query?products.filter(product=>`${product.name} ${product.category}`.toLowerCase().includes(query)):products.slice(0,4));document.querySelector('#productos').scrollIntoView({behavior:'smooth',block:'start'})});
