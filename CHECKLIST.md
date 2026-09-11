@@ -142,6 +142,7 @@ Esta es la puerta de aprobación antes de pasar a la Tienda nativa. Cada punto d
 - [x] Descubrimiento: categorías de Bicicletas, Componentes y Accesorios con enlaces funcionales.
 - [x] Asistencia: CTA visible a Contacto/WPForms y CTA a Servicio Técnico.
 - [x] Pie: enlaces canónicos a Tienda, Servicio Técnico, Nosotros, Contacto y Términos.
+- [x] Pie nativo de Blocksy: menú separado de información/legal, enlaces con espaciado legible en móvil y sin alterar el menú principal.
 - [x] Accesibilidad: un H1, jerarquía de encabezados, nombres accesibles, alt de imágenes, foco visible y sin overflow horizontal.
 - [ ] Validación final de copy, promociones, precios y datos legales por el propietario.
 
