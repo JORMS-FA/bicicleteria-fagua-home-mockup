@@ -180,6 +180,7 @@ Esta es la puerta de aprobación antes de pasar a la Tienda nativa. Cada punto d
 - [x] Las categorías de WooCommerce generan una meta descripción SEO desde su descripción o nombre real.
 - [x] Contacto, Nosotros y Servicio Técnico tienen meta descripciones SEO únicas, comprobadas en el HTML público.
 - [x] Portada, Tienda y fichas de producto incluyen Open Graph con título, descripción, tipo y URL canónica correctos.
+- [x] Portada, Tienda y fichas de producto incluyen imagen Open Graph real para compartir en redes.
 - [ ] Validación final de copy, promociones, precios y datos legales por el propietario.
 
 ### Filtro móvil de Tienda — comprobado
