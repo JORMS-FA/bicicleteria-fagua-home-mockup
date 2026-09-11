@@ -34,11 +34,13 @@ No se debe pegar el HTML completo de la maqueta en un widget HTML. Tampoco se de
 
 Elementor gratuito no sustituye el Theme Builder de Elementor Pro. Por eso las plantillas globales de tienda/producto y la cabecera deben resolverse con Blocksy y WooCommerce, manteniendo Elementor para el contenido que sí puede editar de forma nativa.
 
-## Menú principal propuesto
+## Menú principal actual y regla de simplificación
 
-`Inicio · Tienda · Bicicletas · Componentes · Accesorios · Servicio Técnico · Nosotros/Contacto`
+El menú `Primary` (ID 124) está asignado a las ubicaciones activas de Blocksy y contiene ocho entradas comprobadas:
 
-Carrito y Mi Cuenta deben quedar como iconos o enlaces secundarios. Las páginas legales deben permanecer en el pie. `Indumentaria` solo se añade si hay suficiente inventario y se decide que merece una entrada propia.
+`Inicio · Tienda · Bicicletas · Componentes · Indumentaria · Accesorios · Servicio Técnico · Contacto`
+
+Carrito y Mi Cuenta quedan como iconos secundarios. `Nosotros` se mantiene como página informativa enlazada desde el pie, sin duplicar Contacto. Las páginas legales permanecen en el pie. Si el catálogo de Indumentaria no justifica una entrada propia, se puede retirar después de revisar inventario y analítica; no se elimina automáticamente.
 
 ## Puertas de verificación
 
