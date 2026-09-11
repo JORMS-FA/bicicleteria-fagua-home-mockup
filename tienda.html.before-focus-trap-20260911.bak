@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="https://ironman.tailcdf25e.ts.net/">
+  <meta name="description" content="Compra bicicletas, componentes, accesorios y herramientas en Bicicletería Fagua.">
+  <title>Tienda | Bicicletería Fagua</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://jorms-fa.github.io/bicicleteria-fagua-home-mockup/styles.css?v=opaque-header-13">
+  <link rel="stylesheet" href="https://jorms-fa.github.io/bicicleteria-fagua-home-mockup/tienda.css?v=shop-1">
+</head>
+<body class="shop-page">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div class="announcement"><div class="shell announcement__inner"><div class="announcement__viewport" aria-label="Mensajes de la tienda"><div class="announcement__track"><span><i class="announcement__flag" aria-hidden="true"></i> ¡Envíos a toda Colombia! <i class="announcement__flag" aria-hidden="true"></i></span><span>Ofertas imperdibles para tu próxima ruta</span><span>Compra segura y asesoría de taller</span><span aria-hidden="true"><i class="announcement__flag" aria-hidden="true"></i> ¡Envíos a toda Colombia! <i class="announcement__flag" aria-hidden="true"></i></span><span aria-hidden="true">Ofertas imperdibles para tu próxima ruta</span><span aria-hidden="true">Compra segura y asesoría de taller</span></div></div></div></div>
+  <header class="site-header">
+    <div class="shell header__inner">
+      <button class="icon-button menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menú"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      <a class="brand" href="./" aria-label="Bicicletería Fagua, inicio"><img src="https://jorms-fa.github.io/bicicleteria-fagua-home-mockup/assets/logo-fagua.svg" alt="Bicicletería Fagua" width="150" height="150"></a>
+      <nav id="site-nav" class="site-nav" aria-label="Navegación principal"><button class="nav-close" type="button">Cerrar menú</button><a class="site-nav__link" href="./">Inicio</a><a class="site-nav__link is-active" href="/tienda/" aria-current="page">Tienda</a><a class="site-nav__link" href="/categoria-producto/mtb/">Bicicletas</a><a class="site-nav__link" href="/categoria-producto/componentes/">Componentes</a><a class="site-nav__link" href="/servicio-tecnico/">Taller</a><a class="site-nav__link" href="/contacto/">Contacto</a></nav>
+      <button class="nav-scrim" type="button" aria-hidden="true" tabindex="-1" hidden></button>
+      <div class="header-actions"><button class="icon-button search-toggle" type="button" aria-expanded="false" aria-controls="search-panel" aria-label="Buscar productos"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3"/><path d="m16 16 4.5 4.5"/></svg></button><a class="icon-button cart-button" href="/carrito/" aria-label="Carrito"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h2l1.5 10.2h9.8L20 8H7"/><circle cx="9.5" cy="19" r="1"/><circle cx="17" cy="19" r="1"/></svg><span class="cart-count" aria-hidden="true">0</span></a></div>
+    </div>
+    <div id="search-panel" class="search-panel" hidden><form class="shell search-form" role="search"><label for="header-search">Buscar en la tienda</label><div class="search-form__field"><input id="header-search" type="search" placeholder="Busca bicicletas, luces, herramientas..." autocomplete="off"><button class="button button--small" type="submit">Buscar</button></div></form></div>
+  </header>
+  <main id="contenido">
+    <section class="shop-hero shell" aria-labelledby="shop-title">
+      <div><p class="eyebrow">TIENDA FAGUA · CATÁLOGO REAL</p><h1 id="shop-title">Todo para tu próxima <em>ruta.</em></h1><p class="shop-hero__lead">Bicicletas, componentes y accesorios seleccionados para que compres con claridad y ruedes con confianza.</p></div>
+      <div class="shop-hero__note"><span class="shop-hero__note-mark" aria-hidden="true">↗</span><div><strong>Compra con respaldo</strong><span>Envíos nacionales y asesoría de taller.</span></div></div>
+    </section>
+    <section class="shop-catalog shell" aria-labelledby="catalog-title">
+      <div class="shop-categories" aria-label="Categorías de productos"><button class="category-chip is-active" type="button" data-category="all">Todo</button><button class="category-chip" type="button" data-category="MTB">Bicicletas</button><button class="category-chip" type="button" data-category="Componentes">Componentes</button><button class="category-chip" type="button" data-category="Accesorios">Accesorios</button><button class="category-chip" type="button" data-category="Herramientas">Taller</button></div>
+      <div class="shop-toolbar"><div><p class="eyebrow">CATÁLOGO FAGUA</p><h2 id="catalog-title">Elige tu próximo equipo</h2></div><div class="shop-controls"><div class="shop-control"><label for="shop-search">Buscar productos</label><input id="shop-search" type="search" placeholder="Ej. bicicleta, luz..." autocomplete="off"></div><div class="shop-control"><label for="shop-sort">Ordenar por</label><select id="shop-sort"><option value="featured">Destacados</option><option value="price-asc">Precio: menor a mayor</option><option value="price-desc">Precio: mayor a menor</option><option value="name">Nombre</option></select></div></div></div>
+      <div class="shop-results-row"><p id="results-count" role="status" aria-live="polite"></p><a class="text-link" href="/contacto/">¿Necesitas ayuda? →</a></div>
+      <div id="shop-grid" class="product-grid shop-grid" aria-live="polite"></div>
+      <div id="shop-empty" class="empty-products" hidden>No encontramos productos con esa búsqueda. <button type="button" id="clear-filters">Ver todo el catálogo</button></div>
+    </section>
+    <section class="shop-assistance shell" aria-labelledby="assistance-title"><div><p class="eyebrow">¿NO SABES QUÉ ELEGIR?</p><h2 id="assistance-title">Te recomendamos lo que sí necesitas.</h2><p>Cuéntanos tu presupuesto, tu nivel y dónde ruedas. Te respondemos con una recomendación clara.</p></div><a class="button button--light" href="/contacto/">Hablar con Fagua <span aria-hidden="true">→</span></a></section>
+  </main>
+  <footer class="site-footer" data-elementor-section="footer"><div class="shell footer__top"><div class="footer__brand"><img src="https://jorms-fa.github.io/bicicleteria-fagua-home-mockup/assets/logo-fagua.svg" alt="Bicicletería Fagua" width="100" height="100"><div><h2>Bicicletería Fagua</h2><p>Bicicletas, componentes y accesorios para rodar en serio.</p></div></div><div class="footer__links"><a href="/tienda/">Tienda</a><a href="/servicio-tecnico/">Servicio técnico</a><a href="/nosotros/">Nosotros</a><a href="/contacto/">Contacto</a><a href="/terminos-condiciones/">Términos y condiciones</a></div></div><div class="shell footer__bottom"><span>© 2026 Bicicletería Fagua</span><span>Meta, Colombia · Envíos nacionales</span></div></footer>
+  <script src="https://jorms-fa.github.io/bicicleteria-fagua-home-mockup/tienda.js?v=shop-focus-trap-3" defer></script>
+</body>
+</html>
