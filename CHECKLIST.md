@@ -213,6 +213,7 @@ Esta es la puerta de aprobación antes de pasar a la Tienda nativa. Cada punto d
 - [x] El rango mínimo/máximo usa los parámetros nativos de WooCommerce.
 - [x] Los campos de precio vacíos se eliminan antes de consultar, evitando estados vacíos falsos al combinar categoría y disponibilidad.
 - [x] El panel tiene etiquetas, campos con IDs únicos, botones de 44 px y enlace para limpiar filtros.
+- [x] Si la URL ya contiene un rango de precio, los campos móviles se repueblan al abrir el panel; “Limpiar filtros” y el selector de orden alcanzan 44 px de alto/ancho táctil.
 - [x] Los enlaces de categoría dentro de las tarjetas de Tienda tienen ahora un área táctil mínima de 44 px en móvil.
 - [x] En escritorio permanece oculto y el sidebar nativo sigue disponible.
 - [x] Las categorías duplicadas “MTB” se diferenciaron como “Bicicletas MTB” y “Llantas MTB” sin cambiar sus URLs.
