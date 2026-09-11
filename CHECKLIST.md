@@ -196,6 +196,7 @@ Esta es la puerta de aprobación antes de pasar a la Tienda nativa. Cada punto d
 
 - [x] Aviso Legal: se retiraron los placeholders visibles; la dirección real quedó incorporada y correo/teléfono remiten al formulario de Contacto sin inventar datos.
 - [x] Privacidad: se retiraron los placeholders visibles y el canal de ejercicio de derechos remite al formulario de Contacto.
+- [x] Los canales de Contacto en ambas páginas legales son enlaces accesibles, no URLs largas pegadas como texto.
 - [ ] Aviso Legal y Privacidad: revisar con el propietario el responsable legal y el marco aplicable al operar en Colombia; la revisión técnica no sustituye asesoría jurídica.
 - [ ] Cookies: inventariar cookies y scripts reales y confirmar si habrá banner de consentimiento; el texto actual menciona Google Analytics/remarketing sin evidencia activa.
 - [ ] Términos: confirmar IVA, medios de pago, plazos de envío, devoluciones, garantía y jurisdicción antes de aprobar condiciones comerciales.
