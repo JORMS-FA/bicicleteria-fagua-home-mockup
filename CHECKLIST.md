@@ -77,6 +77,7 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] La portada ID 555 se reconstruyó con widgets nativos de Elementor; no quedan widgets HTML de página completa.
 - [x] El menú `Primary` (ID 124) se asignó a las ubicaciones activas de Blocksy y sustituyó el fallback automático de páginas.
 - [x] La cabecera activa conserva menú, logo centrado, búsqueda y carrito; el panel móvil está configurado a la izquierda.
+- [x] La cabecera móvil de Blocksy fue ajustada para centrar el logo y reservar espacio para lupa y carrito sin mostrar el importe en pantallas estrechas.
 - [x] La franja de envíos se añadió como contenido editable de Elementor, con bandera CSS y texto accesible.
 - [x] Los destacados se limitaron a cuatro productos reales actualmente disponibles mediante shortcode de WooCommerce.
 - [x] Contacto canónico actualizado: el enlace del menú y el CTA de asesoría apuntan a `/contacto/`; la página antigua se conserva como respaldo hasta aprobar su archivado.
