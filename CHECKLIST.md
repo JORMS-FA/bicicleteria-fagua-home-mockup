@@ -92,6 +92,7 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] El aviso nativo de producto agotado expone `role="status"` para lectores de pantalla sin cambiar el flujo de compra.
 - [x] La ficha de producto GW Lynx fue comprobada en viewport móvil: un H1, galería con `alt`, precio, cantidad y “Añadir al carrito” accesibles, sin overflow.
 - [x] Los botones de añadir al carrito de las tarjetas usan el permalink del producto correspondiente; se corrigió el caso relacionado Lynx/Falcon sin cambiar el ID AJAX.
+- [x] La ficha “Cadenilla Shimano CN-HG40” usa ahora un slug coherente; el slug CN-HG93 anterior redirige con 301 y no quedan enlaces vivos apuntando a él.
 - [x] Cantidad y “Añadir al carrito” tienen ahora una altura táctil mínima de 44 px en móvil mediante CSS reversible.
 - [x] El carrito móvil fue comprobado con producto, cantidad, subtotal, envío y enlace a checkout; no presenta overflow y sus acciones principales tienen 44 px.
 - [x] Los controles móviles de Carrito (cantidad, quitar producto, cupón y finalizar compra) tienen ahora objetivos táctiles mínimos de 44 px mediante CSS reversible.
