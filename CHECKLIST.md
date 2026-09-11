@@ -101,8 +101,10 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] Los controles móviles de Carrito (cantidad, quitar producto, cupón y finalizar compra) tienen ahora objetivos táctiles mínimos de 44 px mediante CSS reversible.
 - [x] El enlace para quitar productos del carrito expone una etiqueta accesible en español (“Quitar … del carrito”).
 - [x] Las acciones de cupón y checkout del carrito tienen ahora objetivo táctil mínimo de 44 px en móvil mediante CSS reversible.
+- [x] En escritorio, los controles y acciones principales del Carrito conservan objetivos táctiles mínimos de 44 px.
 - [x] El checkout móvil fue comprobado con campos de facturación, métodos de pago y términos en español; no presenta overflow.
 - [x] Campos principales y “Realizar el pedido” tienen ahora objetivo táctil mínimo de 44 px en móvil mediante CSS reversible.
+- [x] Los controles Select2 del checkout miden 343×44 px en móvil y 558×44 px en escritorio, sin overflow; el CSS global conserva copia de respaldo reversible.
 - [x] El árbol accesible de Contacto expone los cuatro campos del formulario en orden: Nombre, Teléfono, Correo electrónico y Mensaje, junto con “Enviar mensaje”.
 - [x] Contacto y Nosotros fueron normalizados con párrafos, encabezados y lista nativos; la dirección, horario, misión y oferta ya no quedan unidos en un solo bloque.
 - [x] Se retiró el encabezado redundante que repetía el título de página en Aviso Legal, Privacidad, Cookies y Términos; queda un solo H1 visible por página.
