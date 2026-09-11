@@ -110,7 +110,7 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] La cabecera móvil de Blocksy fue ajustada para centrar el logo y reservar espacio para lupa y carrito sin mostrar el importe en pantallas estrechas.
 - [x] La barra de envíos quedó en la fila superior de Blocksy, por encima del encabezado, con una sola instancia visible y sin botón de pausa.
 - [x] La cabecera móvil nativa fue comprobada en el archivo Tienda: logo centrado, lupa y carrito separados, sin importe que provoque solapamiento.
-- [x] El drawer móvil nativo fue comprobado: entra desde la izquierda, muestra los 8 enlaces, tiene cierre accesible y devuelve el foco al botón Menú.
+- [x] El drawer móvil nativo fue comprobado: entra desde la izquierda, muestra los 7 enlaces canónicos, tiene cierre accesible y devuelve el foco al botón Menú.
 - [x] Los controles móviles de cabecera, ordenamiento, filtro y compra tienen un objetivo táctil mínimo de 44 px.
 - [x] La franja de envíos se implementó como elemento HTML nativo de la cabecera Blocksy, con bandera CSS, texto accesible y copia de respaldo de la configuración anterior.
 - [x] Los destacados se limitaron a cuatro productos reales actualmente disponibles mediante shortcode de WooCommerce.
@@ -179,10 +179,10 @@ La maqueta pública sirve para comparar composición y conversión. La versión 
 ### Auditoría de menús de WordPress (solo lectura)
 
 - [x] Se encontraron tres menús: `Main Menu`, `Menú Principal` y `Primary`.
-- [x] `Primary` contiene 8 enlaces: Inicio, Tienda, Bicicletas, Componentes, Indumentaria, Accesorios, Servicio Técnico y Contacto.
+- [x] `Primary` contiene 7 enlaces: Inicio, Tienda, Bicicletas, Componentes, Accesorios, Servicio Técnico y Contacto.
 - [x] `Main Menu` y `Menú Principal` contienen enlaces parciales que duplican categorías o Inicio.
 - [x] La lectura inicial devolvió `nav_menu_locations` vacío; se confirmó la cabecera activa de Blocksy y se asignó explícitamente `Primary` a sus ubicaciones.
-- [x] Se creó una copia/referencia del menú activo y se dejó una sola navegación principal de 8 enlaces; queda pendiente decidir si `Indumentaria` permanece visible.
+- [x] Se creó una copia/referencia del menú activo y se dejó una sola navegación principal de 7 enlaces; `Indumentaria` se ocultó del menú porque actualmente no tiene productos, sin borrar la categoría.
 
 No se deben borrar páginas ni desinstalar WooCommerce durante la fase de diagnóstico. Primero se decide la página canónica y se comprueban sus referencias en WooCommerce y el menú.
 

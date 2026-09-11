@@ -36,11 +36,11 @@ Elementor gratuito no sustituye el Theme Builder de Elementor Pro. Por eso las p
 
 ## Menú principal actual y regla de simplificación
 
-El menú `Primary` (ID 124) está asignado a las ubicaciones activas de Blocksy y contiene ocho entradas comprobadas:
+El menú `Primary` (ID 124) está asignado a las ubicaciones activas de Blocksy y contiene siete entradas comprobadas:
 
-`Inicio · Tienda · Bicicletas · Componentes · Indumentaria · Accesorios · Servicio Técnico · Contacto`
+`Inicio · Tienda · Bicicletas · Componentes · Accesorios · Servicio Técnico · Contacto`
 
-Carrito y Mi Cuenta quedan como iconos secundarios. `Nosotros` se mantiene como página informativa enlazada desde el pie, sin duplicar Contacto. Las páginas legales permanecen en el pie. Si el catálogo de Indumentaria no justifica una entrada propia, se puede retirar después de revisar inventario y analítica; no se elimina automáticamente.
+Carrito y Mi Cuenta quedan como iconos secundarios. `Nosotros` se mantiene como página informativa enlazada desde el pie, sin duplicar Contacto. Las páginas legales permanecen en el pie. `Indumentaria` se retiró de la navegación visible porque la categoría está vacía; la categoría y sus productos futuros no se borraron.
 
 ## Puertas de verificación
 
