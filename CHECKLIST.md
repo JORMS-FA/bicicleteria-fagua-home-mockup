@@ -91,6 +91,7 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] La ficha de producto GW Lynx fue comprobada en viewport móvil: un H1, galería con `alt`, precio, cantidad y “Añadir al carrito” accesibles, sin overflow.
 - [x] Cantidad y “Añadir al carrito” tienen ahora una altura táctil mínima de 44 px en móvil mediante CSS reversible.
 - [x] El carrito móvil fue comprobado con producto, cantidad, subtotal, envío y enlace a checkout; no presenta overflow y sus acciones principales tienen 44 px.
+- [x] Los controles móviles de Carrito (cantidad, quitar producto, cupón y finalizar compra) tienen ahora objetivos táctiles mínimos de 44 px mediante CSS reversible.
 - [x] Las acciones de cupón y checkout del carrito tienen ahora objetivo táctil mínimo de 44 px en móvil mediante CSS reversible.
 - [x] El checkout móvil fue comprobado con campos de facturación, métodos de pago y términos en español; no presenta overflow.
 - [x] Campos principales y “Realizar el pedido” tienen ahora objetivo táctil mínimo de 44 px en móvil mediante CSS reversible.
