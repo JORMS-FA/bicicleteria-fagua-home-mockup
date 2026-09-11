@@ -80,6 +80,7 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] La cabecera móvil de Blocksy fue ajustada para centrar el logo y reservar espacio para lupa y carrito sin mostrar el importe en pantallas estrechas.
 - [x] La cabecera móvil nativa fue comprobada en el archivo Tienda: logo centrado, lupa y carrito separados, sin importe que provoque solapamiento.
 - [x] El drawer móvil nativo fue comprobado: entra desde la izquierda, muestra los 8 enlaces, tiene cierre accesible y devuelve el foco al botón Menú.
+- [x] Los controles móviles de cabecera, ordenamiento, filtro y compra tienen un objetivo táctil mínimo de 44 px.
 - [x] La franja de envíos se añadió como contenido editable de Elementor, con bandera CSS y texto accesible.
 - [x] Los destacados se limitaron a cuatro productos reales actualmente disponibles mediante shortcode de WooCommerce.
 - [x] Contacto canónico actualizado: el enlace del menú y el CTA de asesoría apuntan a `/contacto/`; la página antigua se conserva como respaldo hasta aprobar su archivado.
@@ -97,6 +98,8 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [ ] Definir páginas canónicas y migrar contenido real sin sobrescribir datos sin confirmar.
 - [ ] Construir Tienda nativa con el catálogo real.
 - [x] Auditar Tienda nativa con catálogo real, ordenamiento, paginación y acciones Añadir al carrito; queda pendiente su pulido visual comercial.
+- [x] Activar la barra lateral nativa de WooCommerce en escritorio con categorías y filtro de precio.
+- [x] Corregir la categoría de producto que aparecía como “NI├▒OS”; ahora se muestra “Niños”.
 - [x] Construir Inicio nativo con Elementor y Blocksy (primera versión editable).
 - [x] Revisar menú, pie, legales, formularios y recorrido de compra (primera pasada; falta prueba móvil física).
 
