@@ -128,7 +128,7 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] Añadir filtro móvil dinámico para categoría, rango de precio y disponibilidad; el panel se oculta en escritorio y conserva la consulta nativa de WooCommerce.
 - [x] Corregir la categoría de producto que aparecía como “NI├▒OS”; ahora se muestra “Niños”.
 - [x] Construir Inicio nativo con Elementor y Blocksy (primera versión editable).
-- [x] Revisar menú, pie, legales, formularios y recorrido de compra (primera pasada; falta prueba móvil física).
+- [x] Revisar menú, pie, legales, formularios y recorrido de compra en navegador con viewport móvil; queda pendiente la comprobación en un teléfono físico.
 
 ## Lista de aceptación para cerrar la portada
 
