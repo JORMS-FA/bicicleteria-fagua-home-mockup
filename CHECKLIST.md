@@ -74,6 +74,11 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] Se conservan las páginas del sistema de WooCommerce: Tienda, Carrito, Finalizar compra y Mi cuenta.
 - [x] Hay productos y categorías reales disponibles para la página Tienda.
 - [x] WooCommerce quedó apuntando a la página válida “Términos y Condiciones” (ID 1047); el valor anterior 664 se guardó como respaldo reversible.
+- [x] La portada ID 555 se reconstruyó con widgets nativos de Elementor; no quedan widgets HTML de página completa.
+- [x] El menú `Primary` (ID 124) se asignó a las ubicaciones activas de Blocksy y sustituyó el fallback automático de páginas.
+- [x] La cabecera activa conserva menú, logo centrado, búsqueda y carrito; el panel móvil está configurado a la izquierda.
+- [x] La franja de envíos se añadió como contenido editable de Elementor, con bandera CSS y texto accesible.
+- [x] Los destacados se limitaron a cuatro productos reales actualmente disponibles mediante shortcode de WooCommerce.
 - [ ] Resolver duplicados: “Nosotros y contacto” frente a “Nosotros” + “Contacto”.
 - [ ] Resolver duplicados entre “Políticas y condiciones” y las páginas legales individuales.
 - [ ] Corregir el menú después de decidir qué páginas se conservan.
@@ -86,8 +91,8 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [ ] Auditoría y copia de seguridad de menú, páginas y ajustes de WooCommerce.
 - [ ] Definir páginas canónicas y migrar contenido real sin sobrescribir datos sin confirmar.
 - [ ] Construir Tienda nativa con el catálogo real.
-- [ ] Construir Inicio nativo con Elementor y Blocksy.
-- [ ] Revisar menú, pie, legales, formularios y recorrido de compra.
+- [x] Construir Inicio nativo con Elementor y Blocksy (primera versión editable).
+- [x] Revisar menú, pie, legales, formularios y recorrido de compra (primera pasada; falta prueba móvil física).
 
 ### Auditoría de menús de WordPress (solo lectura)
 
@@ -95,7 +100,7 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] `Primary` contiene 8 enlaces: Inicio, Tienda, Bicicletas, Componentes, Indumentaria, Accesorios, Servicio Técnico y Contacto.
 - [x] `Main Menu` y `Menú Principal` contienen enlaces parciales que duplican categorías o Inicio.
 - [x] La lectura de ubicaciones del tema devolvió `nav_menu_locations` vacío; antes de editar hay que confirmar qué menú está mostrando Blocksy en su constructor de cabecera.
-- [ ] Crear una copia/referencia del menú activo y reducirlo a una sola navegación principal.
+- [x] Crear una copia/referencia del menú activo y asignar una sola navegación principal; queda pendiente decidir si `Indumentaria` permanece visible.
 
 No se deben borrar páginas ni desinstalar WooCommerce durante la fase de diagnóstico. Primero se decide la página canónica y se comprueban sus referencias en WooCommerce y el menú.
 

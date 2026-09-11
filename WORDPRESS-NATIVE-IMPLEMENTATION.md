@@ -47,6 +47,8 @@ Carrito y Mi Cuenta deben quedar como iconos o enlaces secundarios. Las páginas
 - Después de Inicio: comprobar edición con Elementor, responsive, foco, contraste, alt y ausencia de overflow.
 - Antes de publicar: producto → carrito → checkout → confirmación, formulario de contacto y enlaces legales.
 
-## Hallazgo corregido y pendiente de validación
+## Cambios aplicados y pendientes de validación
 
-La configuración de WooCommerce apuntaba `woocommerce_terms_page_id` a la página 664, pero ese registro no existía. Se corrigió de forma reversible para usar la página válida 1047 (`/terminos-condiciones/`) y se guardó el valor anterior en `fagua_backup_woocommerce_terms_page_id`. Falta probar el checkout con un producto real y revisar los datos legales que todavía no estén confirmados; no se debe inventar correo, teléfono o dirección.
+Se corrigió de forma reversible `woocommerce_terms_page_id` para usar la página válida 1047 (`/terminos-condiciones/`) y se guardó el valor anterior en `fagua_backup_woocommerce_terms_page_id`. La portada 555 ya usa widgets nativos de Elementor, el menú `Primary` 124 está asignado a Blocksy y la cabecera usa la distribución logo-centro / búsqueda-carrito-derecha. Los destacados muestran cuatro IDs reales con stock disponible.
+
+Falta probar el checkout completo con datos de prueba y revisar los datos legales que todavía no estén confirmados; no se debe inventar correo, teléfono o dirección.
