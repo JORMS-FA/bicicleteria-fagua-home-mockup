@@ -27,6 +27,7 @@
 ## Portada — pendiente de aprobación del propietario
 
 - [x] Tipografía de marca Montserrat cargada y aplicada en WordPress; queda solo la aprobación visual del propietario.
+- [x] En escritorio se ocultó el texto de sitio redundante bajo el logo; el logo oficial permanece visible y centrado.
 - [ ] Confirmar textos, promociones y precios reales.
 - [ ] Revisar contraste WCAG en la versión de WordPress.
 - [ ] Validar tablet y escritorio.
