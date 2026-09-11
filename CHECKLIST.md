@@ -146,6 +146,7 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] La barra de envíos quedó en la fila superior de Blocksy, por encima del encabezado, con una sola instancia visible y sin botón de pausa.
 - [x] La cabecera móvil nativa fue comprobada en el archivo Tienda: logo centrado, lupa y carrito separados, sin importe que provoque solapamiento.
 - [x] El drawer móvil nativo fue comprobado: entra desde la izquierda, muestra los 7 enlaces canónicos, tiene cierre accesible y devuelve el foco al botón Menú.
+- [x] El botón de cierre del drawer fue ajustado a un objetivo táctil de 44×44 px y verificado en la Tienda pública; se conserva el respaldo `fagua_backup_custom_css_288_before_drawer_close_20260911`.
 - [x] Los controles móviles de cabecera, ordenamiento, filtro y compra tienen un objetivo táctil mínimo de 44 px.
 - [x] La franja de envíos se implementó como elemento HTML nativo de la cabecera Blocksy, con bandera CSS, texto accesible y copia de respaldo de la configuración anterior.
 - [x] Los destacados se limitaron a cuatro productos reales actualmente disponibles mediante shortcode de WooCommerce.
