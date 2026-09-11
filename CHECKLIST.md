@@ -21,6 +21,7 @@
 - [x] Cuatro tarjetas destacadas con enlace de producto, precio, disponibilidad y CTA.
 - [x] Menú lateral probado como panel fuera de pantalla: entra de izquierda a derecha, tiene cierre visible, Escape, fondo atenuado, bloqueo de scroll y retorno del foco al botón de menú.
 - [x] Barra de anuncios sin botón de pausa; la bandera se ve en la interfaz y el texto accesible es “¡Envíos a toda Colombia!”.
+- [x] La franja se detiene al recibir foco o al pasar el cursor y respeta `prefers-reduced-motion`, sin añadir un botón visible.
 - [x] En una vista móvil de 319 px de ancho no se detectó overflow horizontal.
 - [x] Jerarquía de encabezados comprobada: un H1 para la portada y H2 para las secciones.
 
