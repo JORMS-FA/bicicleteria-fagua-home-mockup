@@ -89,7 +89,7 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] Resolver duplicados entre “Políticas y condiciones” y las páginas legales individuales: el agregado antiguo pasó a borrador reversible.
 - [ ] Completar datos legales faltantes (correo, teléfono y responsable legal) sin inventarlos.
 - [x] Corregir el menú: `Primary` quedó asignado a Blocksy y el enlace Contacto ya no apunta a la página duplicada.
-- [ ] Probar checkout con un producto real y no únicamente con carrito vacío.
+- [x] Probar checkout con un producto real y no únicamente con carrito vacío (pedido no enviado).
 
 ### Estado de trabajo recomendado
 
