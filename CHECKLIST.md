@@ -102,10 +102,11 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] El menú `Primary` (ID 124) se asignó a las ubicaciones activas de Blocksy y sustituyó el fallback automático de páginas.
 - [x] La cabecera activa conserva menú, logo centrado, búsqueda y carrito; el panel móvil está configurado a la izquierda.
 - [x] La cabecera móvil de Blocksy fue ajustada para centrar el logo y reservar espacio para lupa y carrito sin mostrar el importe en pantallas estrechas.
+- [x] La barra de envíos quedó en la fila superior de Blocksy, por encima del encabezado, con una sola instancia visible y sin botón de pausa.
 - [x] La cabecera móvil nativa fue comprobada en el archivo Tienda: logo centrado, lupa y carrito separados, sin importe que provoque solapamiento.
 - [x] El drawer móvil nativo fue comprobado: entra desde la izquierda, muestra los 8 enlaces, tiene cierre accesible y devuelve el foco al botón Menú.
 - [x] Los controles móviles de cabecera, ordenamiento, filtro y compra tienen un objetivo táctil mínimo de 44 px.
-- [x] La franja de envíos se añadió como contenido editable de Elementor, con bandera CSS y texto accesible.
+- [x] La franja de envíos se implementó como elemento HTML nativo de la cabecera Blocksy, con bandera CSS, texto accesible y copia de respaldo de la configuración anterior.
 - [x] Los destacados se limitaron a cuatro productos reales actualmente disponibles mediante shortcode de WooCommerce.
 - [x] Contacto canónico actualizado: el enlace del menú y el CTA de asesoría apuntan a `/contacto/`; la página antigua se conserva como respaldo hasta aprobar su archivado.
 - [x] La página Contacto conserva dirección, horario y formulario WPForms 579; el formulario vuelve a renderizarse con etiquetas y confirmación en español.
@@ -119,7 +120,7 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 
 - [x] Maqueta visual de Inicio aprobada como dirección de diseño.
 - [x] Maqueta visual de Tienda disponible para comparar la arquitectura comercial.
-- [ ] Auditoría y copia de seguridad de menú, páginas y ajustes de WooCommerce.
+- [x] Auditoría y copia de seguridad de menú, páginas y ajustes de WooCommerce.
 - [ ] Definir páginas canónicas y migrar contenido real sin sobrescribir datos sin confirmar.
 - [ ] Construir Tienda nativa con el catálogo real.
 - [x] Auditar Tienda nativa con catálogo real, ordenamiento, paginación y acciones Añadir al carrito; queda pendiente su pulido visual comercial.
@@ -127,6 +128,34 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] Corregir la categoría de producto que aparecía como “NI├▒OS”; ahora se muestra “Niños”.
 - [x] Construir Inicio nativo con Elementor y Blocksy (primera versión editable).
 - [x] Revisar menú, pie, legales, formularios y recorrido de compra (primera pasada; falta prueba móvil física).
+
+## Lista de aceptación para cerrar la portada
+
+Esta es la puerta de aprobación antes de pasar a la Tienda nativa. Cada punto debe verificarse en móvil y escritorio, con teclado y con un recorrido de compra real.
+
+- [x] Identidad: logo centrado, tipografía legible, paleta blanco/negro/azul con acento dorado.
+- [x] Cabecera: aviso de envíos arriba, menú único, búsqueda y carrito visibles; ningún elemento se solapa.
+- [x] Menú móvil: panel oculto a la izquierda, entra de izquierda a derecha, cierra con X y Escape, bloquea scroll y devuelve foco.
+- [x] Conversión: hero con una promesa clara, CTA primario “Ver bicicletas” y CTA secundario de accesorios.
+- [x] Prueba social y confianza: beneficios de producto real, envío nacional, respaldo de taller y asesoría.
+- [x] Venta: destacados reales con imagen, nombre, precio, stock y enlace a ficha WooCommerce.
+- [x] Descubrimiento: categorías de Bicicletas, Componentes y Accesorios con enlaces funcionales.
+- [x] Asistencia: CTA visible a Contacto/WPForms y CTA a Servicio Técnico.
+- [x] Pie: enlaces canónicos a Tienda, Servicio Técnico, Nosotros, Contacto y Términos.
+- [x] Accesibilidad: un H1, jerarquía de encabezados, nombres accesibles, alt de imágenes, foco visible y sin overflow horizontal.
+- [ ] Validación final de copy, promociones, precios y datos legales por el propietario.
+
+## Flujo de trabajo recomendado
+
+1. **Cerrar Inicio:** aprobar esta lista y congelar cambios visuales globales.
+2. **Cerrar Tienda:** conservar el archivo dinámico de WooCommerce; añadir filtros útiles (categoría, precio y disponibilidad), revisar agotados y validar móvil.
+3. **Cerrar ficha de producto:** imagen/alt, precio, stock, variaciones, envío, añadir al carrito y productos relacionados.
+4. **Cerrar compra:** Carrito → Finalizar compra → métodos de pago → términos en español; probar sin enviar un pedido real.
+5. **Cerrar contenido:** Nosotros, Contacto/WPForms, Servicio Técnico y páginas legales, sin placeholders.
+6. **Cerrar navegación:** una sola ubicación de menú principal; carrito y cuenta como acciones secundarias; legales solo en el pie.
+7. **Auditoría final:** móvil 320/390 px, escritorio, teclado, contraste, enlaces, consola, rendimiento y copia de seguridad.
+
+La maqueta pública sirve para comparar composición y conversión. La versión que se entrega debe permanecer dentro de WordPress: Elementor para el contenido editable, Blocksy para cabecera/pie y WooCommerce para catálogo, producto y compra.
 
 ### Auditoría de menús de WordPress (solo lectura)
 

@@ -27,7 +27,7 @@ No se debe pegar el HTML completo de la maqueta en un widget HTML. Tampoco se de
 
 ## Responsabilidad de cada herramienta gratuita
 
-- **Blocksy:** cabecera, logo centrado, menú, pie, estilos globales y compatibilidad visual de WooCommerce.
+- **Blocksy:** cabecera (incluida la franja superior de envíos), logo centrado, menú, pie, estilos globales y compatibilidad visual de WooCommerce.
 - **Elementor gratuito:** contenido editable de Inicio y páginas informativas mediante widgets nativos.
 - **WooCommerce:** catálogo, categorías, fichas, carrito, checkout, cuenta, precios e inventario.
 - **WPForms Lite:** formulario de Contacto, con etiquetas visibles y mensaje de confirmación.
@@ -51,8 +51,8 @@ Carrito y Mi Cuenta quedan como iconos secundarios. `Nosotros` se mantiene como 
 
 ## Cambios aplicados y pendientes de validación
 
-Se corrigió de forma reversible `woocommerce_terms_page_id` para usar la página válida 1047 (`/terminos-condiciones/`) y se guardó el valor anterior en `fagua_backup_woocommerce_terms_page_id`. La portada 555 ya usa widgets nativos de Elementor, incluye un hero con imagen real de producto y el menú `Primary` 124 está asignado a Blocksy con distribución logo-centro / búsqueda-carrito-derecha. Los destacados muestran cuatro IDs reales con stock disponible.
+Se corrigió de forma reversible `woocommerce_terms_page_id` para usar la página válida 1047 (`/terminos-condiciones/`) y se guardó el valor anterior en `fagua_backup_woocommerce_terms_page_id`. La portada 555 ya usa widgets nativos de Elementor, incluye un hero con imagen real de producto y el menú `Primary` 124 está asignado a Blocksy con distribución logo-centro / búsqueda-carrito-derecha. La franja de envíos se muestra una sola vez en la fila superior de Blocksy (por encima del encabezado) y el duplicado dentro de Elementor queda oculto con una regla reversible. Los destacados muestran cuatro IDs reales con stock disponible.
 
 El archivo de Tienda mantiene el catálogo dinámico de WooCommerce, ahora con barra lateral nativa de categorías y precio, tarjetas estilizadas desde Blocksy y objetivos táctiles móviles de 44 px. La página duplicada “Nosotros y contacto” y el agregado antiguo “Políticas y condiciones” se conservaron como borradores reversibles; “Nosotros”, “Contacto” y las páginas legales individuales quedan como páginas canónicas.
 
-Falta probar el checkout completo con datos de prueba y revisar los datos legales que todavía no estén confirmados; no se debe inventar correo, teléfono o dirección.
+La auditoría móvil confirmó el drawer desde la izquierda, foco y Escape, logo centrado, ausencia de overflow y el orden comercial de la portada. Falta la validación final de copy, precios/promociones, datos legales que todavía no estén confirmados y el pulido comercial de filtros en Tienda; no se debe inventar correo, teléfono o dirección.
