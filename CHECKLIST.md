@@ -185,6 +185,14 @@ Esta es la puerta de aprobación antes de pasar a la Tienda nativa. Cada punto d
 - [x] Portada, Tienda y fichas de producto incluyen imagen Open Graph real para compartir en redes.
 - [ ] Validación final de copy, promociones, precios y datos legales por el propietario.
 
+### Bloqueadores legales detectados (10/09/2026)
+
+- [ ] Aviso Legal: sustituir `[Tu dirección completa]`, `[Tu email]` y `[Tu teléfono]` con datos confirmados del responsable; no inventarlos.
+- [ ] Privacidad: sustituir los placeholders y revisar el marco aplicable al operar en Colombia; no publicar el texto actual como validación legal definitiva.
+- [ ] Cookies: inventariar cookies y scripts reales y confirmar si habrá banner de consentimiento; el texto actual menciona Google Analytics/remarketing sin evidencia activa.
+- [ ] Términos: confirmar IVA, medios de pago, plazos de envío, devoluciones, garantía y jurisdicción antes de aprobar condiciones comerciales.
+- [x] La URL histórica `/politicas-y-condiciones/` no forma parte del menú ni de los enlaces canónicos; el contenido antiguo se conserva solo como respaldo y no debe republicarse.
+
 ### Filtro móvil de Tienda — comprobado
 
 - [x] El panel usa categorías y conteos del catálogo real; no contiene productos HTML duplicados.
