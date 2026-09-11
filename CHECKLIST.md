@@ -106,6 +106,7 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] La consola del navegador no registra errores ni advertencias en Inicio, Tienda ni Checkout.
 - [x] Mi Cuenta fue comprobada en móvil; campos, acceso y “Mostrar contraseña” tienen áreas táctiles mínimas de 44 px y no hay overflow.
 - [x] La recuperación de contraseña fue comprobada en móvil; campo y botón están traducidos y tienen 44 px sin overflow.
+- [x] Mi Cuenta, recuperación, Carrito y Checkout no muestran etiquetas inglesas residuales en sus estados principales.
 - [x] Se midió una línea base de carga: la portada WordPress respondió en 3,13 s con 108 KB de HTML y la Tienda en 1,45 s con 112 KB; la maqueta pública respondió en aproximadamente 0,25 s.
 - [x] Los scripts públicos `script.js` y `tienda.js` pasan comprobación de sintaxis y el repositorio no presenta errores de whitespace.
 - [x] Los enlaces de la maqueta pública fueron alineados con las rutas canónicas activas (`/nosotros/`, `/contacto/`, `/terminos-condiciones/` y `/servicio-tecnico/`); las cinco rutas responden con HTTP 200.
