@@ -197,6 +197,8 @@ Esta es la puerta de aprobación antes de pasar a la Tienda nativa. Cada punto d
 - [x] Contacto, Nosotros y Servicio Técnico tienen meta descripciones SEO únicas, comprobadas en el HTML público.
 - [x] Portada, Tienda y fichas de producto incluyen Open Graph con título, descripción, tipo y URL canónica correctos.
 - [x] Portada, Tienda y fichas de producto incluyen imagen Open Graph real para compartir en redes.
+- [x] Las etiquetas SEO/Open Graph se imprimen únicamente dentro de `<head>` con saltos de línea reales; no se filtra texto `\\n<meta...>` al contenido visible.
+- [x] La navegación de escritorio queda fuera del árbol de accesibilidad en móvil; el drawer móvil conserva el menú canónico.
 - [ ] Validación final de copy, promociones, precios y datos legales por el propietario.
 
 ### Bloqueadores legales detectados (10/09/2026)
