@@ -80,6 +80,8 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] La portada incluye la imagen real enlazada de la bicicleta GW Lynx MTB.
 - [x] La Tienda pública responde con HTTP 200 y expone productos, ordenamiento, categorías y filtro de precio.
 - [x] Se validaron los enlaces internos principales de la portada (Tienda, categorías, Contacto, carrito y productos); todos respondieron con HTTP 200.
+- [x] Contacto, Términos, Carrito, Finalizar compra y Mi Cuenta responden con HTTP 200; Contacto carga WPForms 579 y muestra “Enviar mensaje”.
+- [x] Términos y Condiciones no contiene placeholders; el checkout requiere un producto en el carrito para mostrar métodos de pago y la casilla legal.
 - [x] Los enlaces de la maqueta pública fueron alineados con las rutas canónicas activas (`/nosotros/`, `/contacto/`, `/terminos-condiciones/` y `/servicio-tecnico/`); las cinco rutas responden con HTTP 200.
 - [x] La navegación pública marca semánticamente la página actual con `aria-current="page"` en Inicio y Tienda.
 - [x] La maqueta de Inicio y Tienda mantiene un H1 por página, imágenes con `alt` y botones con nombre accesible.
