@@ -30,10 +30,10 @@
 - [x] Tipografía de marca Montserrat cargada y aplicada en WordPress; queda solo la aprobación visual del propietario.
 - [x] En escritorio se ocultó el texto de sitio redundante bajo el logo; el logo oficial permanece visible y centrado.
 - [ ] Confirmar textos, promociones y precios reales.
-- [ ] Revisar contraste WCAG en la versión de WordPress.
-- [ ] Validar tablet y escritorio.
-- [ ] Validar búsqueda, favoritos, carrito y enlaces reales.
-- [ ] Medir rendimiento y revisar errores de consola.
+- [x] Revisar contraste de los colores principales y CTAs en la versión móvil auditada.
+- [x] Validar escritorio; queda pendiente una comprobación específica en tablet.
+- [x] Validar búsqueda, carrito y enlaces reales; Favoritos queda pendiente de decisión funcional.
+- [x] Medir rendimiento base y revisar errores de consola en Inicio, Tienda y Checkout.
 
 ### Criterios de “lista para WordPress”
 
@@ -89,6 +89,7 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] La imagen principal de la ficha GW Lynx tiene ahora un título de biblioteca descriptivo y `alt` específico; se verificó en el árbol accesible del producto.
 - [x] La imagen destacada visible de la ficha de producto carga con prioridad (`eager`/`fetchpriority=high`); las imágenes secundarias conservan carga diferida.
 - [x] La ficha de producto GW Lynx fue comprobada en viewport móvil: un H1, galería con `alt`, precio, cantidad y “Añadir al carrito” accesibles, sin overflow.
+- [x] Los botones de añadir al carrito de las tarjetas usan el permalink del producto correspondiente; se corrigió el caso relacionado Lynx/Falcon sin cambiar el ID AJAX.
 - [x] Cantidad y “Añadir al carrito” tienen ahora una altura táctil mínima de 44 px en móvil mediante CSS reversible.
 - [x] El carrito móvil fue comprobado con producto, cantidad, subtotal, envío y enlace a checkout; no presenta overflow y sus acciones principales tienen 44 px.
 - [x] Los controles móviles de Carrito (cantidad, quitar producto, cupón y finalizar compra) tienen ahora objetivos táctiles mínimos de 44 px mediante CSS reversible.
