@@ -108,6 +108,7 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] El checkout móvil fue comprobado con campos de facturación, métodos de pago y términos en español; no presenta overflow.
 - [x] Campos principales y “Realizar el pedido” tienen ahora objetivo táctil mínimo de 44 px en móvil mediante CSS reversible.
 - [x] Los controles Select2 del checkout miden 343×44 px en móvil y 558×44 px en escritorio, sin overflow; el CSS global conserva copia de respaldo reversible.
+- [x] El botón `#place_order` del checkout está limitado al formulario: mide 292×44 px en móvil y 485×44 px en escritorio, sin overflow; el ajuste pasó `php -l` y conserva el respaldo `fagua-mobile-shop-filters.php.bak-checkout44-20260911`.
 - [x] El árbol accesible de Contacto expone los cuatro campos del formulario en orden: Nombre, Teléfono, Correo electrónico y Mensaje, junto con “Enviar mensaje”.
 - [x] Contacto y Nosotros fueron normalizados con párrafos, encabezados y lista nativos; la dirección, horario, misión y oferta ya no quedan unidos en un solo bloque.
 - [x] Se retiró el encabezado redundante que repetía el título de página en Aviso Legal, Privacidad, Cookies y Términos; queda un solo H1 visible por página.
