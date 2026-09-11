@@ -9,6 +9,7 @@
 - [x] Fondo atenuado, scroll bloqueado y foco accesible al abrir el menú.
 - [x] Barra superior de una línea, sin pausa y con bandera colombiana consistente.
 - [x] Hero responsive con CTA principal y CTA secundario.
+- [x] Hero incluye imagen real de producto como widget nativo de Elementor, con texto alternativo y enlace a la ficha WooCommerce.
 - [x] Productos reales con imagen, nombre, precio, disponibilidad y acción de compra.
 - [x] Sin desplazamiento horizontal en móvil.
 - [x] Imágenes con texto alternativo y botones táctiles amplios.
