@@ -175,6 +175,7 @@ Esta es la puerta de aprobación antes de pasar a la Tienda nativa. Cada punto d
 - [x] En escritorio no hay overflow ni imágenes sin `alt`; los enlaces adicionales del menú se agrupan en “Más” mediante un desplegable accesible.
 - [x] Las rutas canónicas de portada, Tienda, categorías, información, legales, carrito, checkout y Mi cuenta responden HTTP 200.
 - [x] La portada tiene una meta descripción SEO única en español, comprobada en el HTML público.
+- [x] La página Tienda tiene una meta descripción SEO única en español, comprobada en el HTML público.
 - [ ] Validación final de copy, promociones, precios y datos legales por el propietario.
 
 ### Filtro móvil de Tienda — comprobado
