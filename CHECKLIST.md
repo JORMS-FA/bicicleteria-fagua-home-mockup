@@ -32,12 +32,12 @@
 - [ ] Confirmar textos, promociones y precios reales.
 - [x] Revisar contraste de los colores principales y CTAs en la versión móvil auditada.
 - [x] Validar escritorio; queda pendiente una comprobación específica en tablet.
-- [x] Validar búsqueda, carrito y enlaces reales; Favoritos queda pendiente de decisión funcional.
+- [x] Validar búsqueda, carrito y enlaces reales; la antigua página Favoritos queda fuera del recorrido y la sección se presenta como “Productos destacados”.
 - [x] Medir rendimiento base y revisar errores de consola en Inicio, Tienda y Checkout.
 
 ### Criterios de “lista para WordPress”
 
-- [x] Los CTAs auditados llevan a destinos reales de WooCommerce o a páginas de contenido real; Favoritos queda pendiente de decisión funcional.
+- [x] Los CTAs auditados llevan a destinos reales de WooCommerce o a páginas de contenido real; no se promete una funcionalidad de Favoritos inexistente.
 - [x] Las cuatro tarjetas de “Destacados” corresponden a productos actualmente disponibles (`instock`); no se muestran agotados como preventa.
 - [x] La tipografía Montserrat se carga de forma estable y conserva legibilidad móvil (texto normal de al menos 16 px).
 - [x] El logo conserva proporción, texto alternativo y centrado en la vista móvil auditada de 319 px; queda pendiente comprobar un ancho intermedio cercano a 390 px en dispositivo físico.
