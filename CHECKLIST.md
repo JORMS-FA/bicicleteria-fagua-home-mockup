@@ -32,7 +32,8 @@
 - [ ] Confirmar textos, promociones y precios reales.
 - [x] Revisar contraste de los colores principales y CTAs en la versión móvil auditada.
 - [x] Validar escritorio.
-- [ ] Completar una comprobación específica en tablet.
+- [x] Validar tablet a 768 px en Inicio y Tienda: sin overflow; header, logo y controles mantienen 44 px.
+- [x] La comprobación post-fix de Tienda a 768 px mostró 12 productos, CTAs de 187×50 px y selector de orden de 257×44 px; el ajuste conserva el backup `fagua-mobile-shop-filters.php.bak-tablet-order-20260911` y no regresó en 390 px.
 - [x] Validar búsqueda, carrito y enlaces reales; la antigua página Favoritos queda fuera del recorrido y la sección se presenta como “Productos destacados”.
 - [x] Medir rendimiento base y revisar errores de consola en Inicio, Tienda y Checkout.
 
