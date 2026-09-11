@@ -147,6 +147,7 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [ ] Definir páginas canónicas y migrar contenido real sin sobrescribir datos sin confirmar.
 - [ ] Construir Tienda nativa con el catálogo real.
 - [x] Auditar Tienda nativa con catálogo real, ordenamiento, paginación y acciones Añadir al carrito; queda pendiente su pulido visual comercial.
+- [x] Añadir una introducción comercial nativa al archivo Tienda, con promesa clara y CTA de asesoría antes del catálogo.
 - [x] Activar la barra lateral nativa de WooCommerce en escritorio con categorías y filtro de precio.
 - [x] Añadir filtro móvil dinámico para categoría, rango de precio y disponibilidad; el panel se oculta en escritorio y conserva la consulta nativa de WooCommerce.
 - [x] Corregir la categoría de producto que aparecía como “NI├▒OS”; ahora se muestra “Niños”.
