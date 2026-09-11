@@ -179,6 +179,7 @@ Esta es la puerta de aprobación antes de pasar a la Tienda nativa. Cada punto d
 - [x] Las leyendas de precio original y precio actual de productos en oferta aparecen en español.
 - [x] El estado vacío de búsqueda muestra “Sin resultados” y conserva un campo accesible para intentar otra búsqueda.
 - [x] Accesibilidad: un H1, jerarquía de encabezados, nombres accesibles, alt de imágenes, foco visible y sin overflow horizontal.
+- [x] Se completó el texto alternativo de la imagen destacada de la bicicleta GW Falcon (ID 647); las tarjetas visibles de Tienda ya no tienen imágenes de producto sin `alt`.
 - [x] Los CTA de Elementor y las acciones de productos destacados miden al menos 44 px en móvil.
 - [x] Los enlaces “Ver categoría” de la portada también miden al menos 44 px en móvil.
 - [x] En escritorio no hay overflow ni imágenes sin `alt`; los enlaces adicionales del menú se agrupan en “Más” mediante un desplegable accesible.
