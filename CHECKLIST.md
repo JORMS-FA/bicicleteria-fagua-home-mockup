@@ -70,6 +70,16 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 
 ## Auditoría del WordPress actual
 
+### Evidencia HTTP adicional (10/09/2026)
+
+- [x] La portada pública responde con HTTP 200 y conserva el título de Bicicletería Fagua.
+- [x] La portada tiene exactamente un H1 (“Equípate para la próxima ruta.”) y siete H2 de sección.
+- [x] Las imágenes de la portada tienen atributo `alt` no vacío y los botones expuestos tienen nombre accesible.
+- [x] La portada no contiene widgets `elementor-widget-html` de página completa.
+- [x] La franja superior contiene la bandera CSS de Colombia y no contiene control de pausa.
+- [x] La portada incluye la imagen real enlazada de la bicicleta GW Lynx MTB.
+- [x] La Tienda pública responde con HTTP 200 y expone productos, ordenamiento, categorías y filtro de precio.
+
 - [x] WordPress público responde y expone WooCommerce Store API, Elementor y Novamira.
 - [x] Instalación observada: Blocksy + Blocksy Companion, Elementor y WooCommerce activos.
 - [x] Se conservan las páginas del sistema de WooCommerce: Tienda, Carrito, Finalizar compra y Mi cuenta.
