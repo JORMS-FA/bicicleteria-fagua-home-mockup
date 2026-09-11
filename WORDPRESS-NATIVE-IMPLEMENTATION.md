@@ -51,7 +51,7 @@ Carrito y Mi Cuenta quedan como iconos secundarios. `Nosotros` se mantiene como 
 
 ## Cambios aplicados y pendientes de validación
 
-En las fichas, la disponibilidad positiva se deriva del stock real de WooCommerce; los productos agotados conservan el aviso nativo y ahora lo exponen con `role="status"` para lectores de pantalla. No se publican cantidades inventadas.
+En las fichas, la disponibilidad positiva se deriva del stock real de WooCommerce; los productos agotados conservan el aviso nativo y ahora lo exponen con `role="status"` para lectores de pantalla. Los productos `onbackorder` se distinguen como “Disponible bajo pedido” en lugar de prometer disponibilidad inmediata. No se publican cantidades inventadas.
 
 Actualización posterior: se retiraron los placeholders visibles de Aviso Legal y Privacidad. La dirección real de La Macarena quedó incorporada y el formulario de Contacto se usa como canal, sin inventar correo ni teléfono. Política de Cookies se ajustó al inventario técnico actual: cookies necesarias de sesión, carrito y seguridad, sin analítica o remarketing activos en la auditoría. Términos y Condiciones se depuró de cifras y promesas no confirmadas y ahora remite al checkout, al destino y a la normativa aplicable. La revisión jurídica del responsable, jurisdicción, cookies opcionales y condiciones comerciales sigue pendiente.
 
