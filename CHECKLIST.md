@@ -168,6 +168,7 @@ Esta es la puerta de aprobación antes de pasar a la Tienda nativa. Cada punto d
 - [x] Se ocultó el selector EN no utilizado para mantener el recorrido de compra en español; no se borró contenido ni configuración de idiomas.
 - [x] La página de resultados de búsqueda de Blocksy muestra “Resultados de búsqueda para …” en español, incluido en móvil.
 - [x] Accesibilidad: un H1, jerarquía de encabezados, nombres accesibles, alt de imágenes, foco visible y sin overflow horizontal.
+- [x] Los CTA de Elementor y las acciones de productos destacados miden al menos 44 px en móvil.
 - [ ] Validación final de copy, promociones, precios y datos legales por el propietario.
 
 ### Filtro móvil de Tienda — comprobado
