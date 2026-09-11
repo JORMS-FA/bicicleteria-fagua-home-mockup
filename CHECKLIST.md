@@ -88,6 +88,7 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [x] La comprobación de checkout no creó pedidos: el recuento actual de pedidos WooCommerce permanece en cero.
 - [x] La imagen principal de la ficha GW Lynx tiene ahora un título de biblioteca descriptivo y `alt` específico; se verificó en el árbol accesible del producto.
 - [x] La imagen destacada visible de la ficha de producto carga con prioridad (`eager`/`fetchpriority=high`); las imágenes secundarias conservan carga diferida.
+- [x] La ficha de producto muestra la disponibilidad derivada del estado real de WooCommerce (“Disponible” o “Agotado”), sin inventar cantidades.
 - [x] La ficha de producto GW Lynx fue comprobada en viewport móvil: un H1, galería con `alt`, precio, cantidad y “Añadir al carrito” accesibles, sin overflow.
 - [x] Los botones de añadir al carrito de las tarjetas usan el permalink del producto correspondiente; se corrigió el caso relacionado Lynx/Falcon sin cambiar el ID AJAX.
 - [x] Cantidad y “Añadir al carrito” tienen ahora una altura táctil mínima de 44 px en móvil mediante CSS reversible.
