@@ -1,7 +1,7 @@
 const ghAssets='https://jorms-fa.github.io/bicicleteria-fagua-home-mockup/assets/';
 const products=[
-  {id:611,name:'Bicicleta GW Lynx 3×7 Velocidades MTB Rin 29',category:'MTB',price:1250000,image:ghAssets+'product-611.png',url:'/producto/bicicleta-gw-lynx-3x7-velocidades-aluminio-mtb-rin-29/',stock:true,tag:'MÁS ELEGIDA'},
-  {id:69,name:'Bicicleta GW Falcon 3×8 Velocidades MTB Rin 29',category:'MTB',price:950000,image:ghAssets+'product-69.jpeg',url:'/producto/bicicleta-gw-falcon-mtb-negro-aluminio-8vel/',stock:true,tag:'FAVORITA'},
+  {id:611,name:'Bicicleta GW Lynx 3×7 Velocidades MTB Rin 29',category:'MTB',price:1250000,image:ghAssets+'product-611.png',url:'/producto/bicicleta-gw-lynx-verde-29/',stock:true,tag:'MÁS ELEGIDA'},
+  {id:69,name:'Bicicleta GW Falcon 3×8 Velocidades MTB Rin 29',category:'MTB',price:950000,image:ghAssets+'product-69.jpeg',url:'/producto/gw-falcon-29/',stock:true,tag:'FAVORITA'},
   {id:938,name:'Zapatillas Ruta Snake Amarillo GW',category:'Calzado',price:320000,image:ghAssets+'product-938.png',url:'/producto/zapatillas-ruta-snake-amarillo/',stock:true,tag:'NUEVO'},
   {id:928,name:'Multiherramientas PRO 22 Funciones',category:'Herramientas',price:128600,image:ghAssets+'product-928.png',url:'/producto/multiherramientas-pro-22-funciones/',stock:true,tag:'TALLER'},
   {id:910,name:'Luz Trasera EBL-035RB 100 lm GW',category:'Seguridad',price:27600,image:'https://ironman.tailcdf25e.ts.net/wp-content/uploads/2026/07/luces__luz-trasera-ebl-035rb-100lm-gw__01_dark_studio_4x3.png',url:'/producto/luz-trasera-ebl-035rb-100lm-gw/',stock:true,tag:''},
