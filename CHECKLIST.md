@@ -26,7 +26,7 @@
 
 ## Portada — pendiente de aprobación del propietario
 
-- [ ] Confirmar tipografía definitiva.
+- [x] Tipografía de marca Montserrat cargada y aplicada en WordPress; queda solo la aprobación visual del propietario.
 - [ ] Confirmar textos, promociones y precios reales.
 - [ ] Revisar contraste WCAG en la versión de WordPress.
 - [ ] Validar tablet y escritorio.
@@ -37,7 +37,7 @@
 
 - [ ] Todos los CTAs llevan a destinos reales de WooCommerce o a una página de contenido real.
 - [ ] No quedan productos agotados dentro de “Destacados” salvo que se quiera usarlos como preventa.
-- [ ] La tipografía final se carga de forma estable y conserva legibilidad móvil (texto normal de al menos 16 px).
+- [x] La tipografía Montserrat se carga de forma estable y conserva legibilidad móvil (texto normal de al menos 16 px).
 - [ ] El logo conserva proporción, texto alternativo y centrado en 320–390 px.
 - [ ] El menú no repite Tienda, Nosotros, Contacto ni páginas legales.
 - [ ] Cada botón y control de icono tiene nombre accesible, foco visible y área táctil suficiente.
