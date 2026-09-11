@@ -125,6 +125,7 @@ La maqueta publicada es una referencia visual; el resultado final debe reconstru
 - [ ] Construir Tienda nativa con el catálogo real.
 - [x] Auditar Tienda nativa con catálogo real, ordenamiento, paginación y acciones Añadir al carrito; queda pendiente su pulido visual comercial.
 - [x] Activar la barra lateral nativa de WooCommerce en escritorio con categorías y filtro de precio.
+- [x] Añadir filtro móvil dinámico para categoría, rango de precio y disponibilidad; el panel se oculta en escritorio y conserva la consulta nativa de WooCommerce.
 - [x] Corregir la categoría de producto que aparecía como “NI├▒OS”; ahora se muestra “Niños”.
 - [x] Construir Inicio nativo con Elementor y Blocksy (primera versión editable).
 - [x] Revisar menú, pie, legales, formularios y recorrido de compra (primera pasada; falta prueba móvil física).
@@ -143,13 +144,23 @@ Esta es la puerta de aprobación antes de pasar a la Tienda nativa. Cada punto d
 - [x] Asistencia: CTA visible a Contacto/WPForms y CTA a Servicio Técnico.
 - [x] Pie: enlaces canónicos a Tienda, Servicio Técnico, Nosotros, Contacto y Términos.
 - [x] Pie nativo de Blocksy: menú separado de información/legal, enlaces con espaciado legible en móvil y sin alterar el menú principal.
+- [x] Se ocultó el selector EN no utilizado para mantener el recorrido de compra en español; no se borró contenido ni configuración de idiomas.
 - [x] Accesibilidad: un H1, jerarquía de encabezados, nombres accesibles, alt de imágenes, foco visible y sin overflow horizontal.
 - [ ] Validación final de copy, promociones, precios y datos legales por el propietario.
+
+### Filtro móvil de Tienda — comprobado
+
+- [x] El panel usa categorías y conteos del catálogo real; no contiene productos HTML duplicados.
+- [x] “Solo disponibles” y “Agotados” modifican la consulta principal y devuelven resultados coherentes.
+- [x] El rango mínimo/máximo usa los parámetros nativos de WooCommerce.
+- [x] El panel tiene etiquetas, campos con IDs únicos, botones de 44 px y enlace para limpiar filtros.
+- [x] En escritorio permanece oculto y el sidebar nativo sigue disponible.
+- [ ] Revisar con el propietario qué categorías comerciales deben destacarse y si conviene enviar agotados al final.
 
 ## Flujo de trabajo recomendado
 
 1. **Cerrar Inicio:** aprobar esta lista y congelar cambios visuales globales.
-2. **Cerrar Tienda:** conservar el archivo dinámico de WooCommerce; añadir filtros útiles (categoría, precio y disponibilidad), revisar agotados y validar móvil.
+2. **Cerrar Tienda:** conservar el archivo dinámico de WooCommerce; validar filtros útiles (categoría, precio y disponibilidad), revisar agotados y validar móvil.
 3. **Cerrar ficha de producto:** imagen/alt, precio, stock, variaciones, envío, añadir al carrito y productos relacionados.
 4. **Cerrar compra:** Carrito → Finalizar compra → métodos de pago → términos en español; probar sin enviar un pedido real.
 5. **Cerrar contenido:** Nosotros, Contacto/WPForms, Servicio Técnico y páginas legales, sin placeholders.
